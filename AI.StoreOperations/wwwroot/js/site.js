@@ -57,14 +57,26 @@
         var columns = $('#grdCol').val();
         var season = $("#season").val();
 
-        if (selectedProductIds && selectedProductIds.length > 0) {
+        if (selectedProductIds && selectedProductIds.length >= 0)
+        {
 
             var serializedIds = selectedProductIds.map(encodeURIComponent).join("&selectedProductIds=");
 
             var queryString = `?selectedProductIds=${serializedIds}&season=${encodeURIComponent(season)}&rows=${rows}&columns=${columns}`;
 
+            //var st = "{  \"Row 1\": {    \"Box 1\": [\"Shampoo\", \"Conditioner\", \"Hair Color\"],    \"Box 2\": [\"Hair Conditioner\", \"Hair Dye\", \"Hair Brush\"],    \"Box 3\": [\"Hair Comb\"]  },  \"Row 2\": {    \"Box 1\": [\"Hair Gel\", \"Hair Curlers\", \"Kids Shampoo\"],    \"Box 2\": [\"Hair Mousse\", \"Hair Serum\"],    \"Box 3\": [\"Hair Bands\", \"Hair Rollers\", \"Shaving Cream\"]  }}";
+
+            
             $.getJSON('/ShelfOptimization/GetRecommendation' + queryString, function (data) {
-                alert('Success');
+                console.log(data.message.value);
+                var jsonData = JSON.parse(data.message.value);
+                var messageData = jsonData.choices[0].message.content;                
+                let regex = /`([^`]+)`/g;
+                let matches = messageData.match(regex);
+                let backtickString = matches[0].replace(/`/g, '');
+                var backtickJson = JSON.parse(backtickString);
+                console.log(backtickJson);  
+                createGrid(rows, columns, backtickJson);
             })
                 .fail(function () {
                     alert('Error');
@@ -102,8 +114,8 @@ function createGrid(rows, columns, data) {
                     var gridCell = $("<div></div>").addClass("grid-cell");
 
                     // Populate the grid cell with the content from the JSON data
-                    gridCell.html(`<strong>${row} - ${box}:</strong><br>`);
-                    gridCell.append(data[row][box].join(", "));
+                    //gridCell.html(`<strong>${row} - ${box}:</strong><br>`);
+                    gridCell.html(data[row][box].join(", "));
 
                     // Set the position in the grid
                     gridCell.css("grid-column-start", boxIndex + 1);

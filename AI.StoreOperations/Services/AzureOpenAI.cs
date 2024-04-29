@@ -12,7 +12,7 @@ namespace AI.StoreOperations.Services
         private static readonly string apiKey = "867ec0de987c46be8aabb85104726996"; // Your Azure OpenAI API key
         private static readonly string deploymentName = "my-gpt35-model"; // Name of your deployment
 
-        public static JsonResult GetShelfOptimizationRecommendations(string prompt)
+        public static async Task<string> GetShelfOptimizationRecommendations(string prompt)
         {
             using (HttpClient client = new HttpClient())
             {
@@ -41,11 +41,13 @@ namespace AI.StoreOperations.Services
                 };
                 var content = new StringContent(JsonConvert.SerializeObject(req), null, "application/json");
                 request.Content = content;
-                var response = client.SendAsync(request);
-                //response.EnsureSuccessStatusCode();
-                return null;
-                //return response.Result;
-
+                var response = client.SendAsync(request).Result;
+                response.EnsureSuccessStatusCode();
+                if (response.IsSuccessStatusCode)
+                {
+                    return await response.Content.ReadAsStringAsync();                    
+                }
+                return null; 
             }
         }
 

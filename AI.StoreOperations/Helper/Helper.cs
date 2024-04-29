@@ -7,7 +7,7 @@ namespace AI.StoreOperations.Helper
         public static List<Product> GetProducts()
         {
             var products = new List<Product>();
-            string filePath = "C:\\PersonalProjects\\TEst\\AIHackthon\\Products.csv";
+            string filePath = @"C:\ai\AI.StoreOperations\Products.csv";
             using (var reader = new StreamReader(filePath))
             {
                 int i = 0;
@@ -42,15 +42,17 @@ namespace AI.StoreOperations.Helper
         public static string GetPrompt(List<Product> prdData, string season, string rows, string columns)
         {
             
-            var prompt = "Based on the following product data, suggest an optimal shelf placement. Consider seasonality, sales volumes and customer type: ";
-
+            var prompt = "Based on the following product data, suggest an optimal shelf placement. Consider seasonality, sales volumes and customer type in suggestion: ";
+            prompt += $"\n Consider current season is {season}.";
+            prompt += $"\n Consider the shelf has {rows} rows and {columns} columns. It means that shelf has  {int.Parse(rows) * int.Parse(columns)} (rows * columns) boxes to arrange the product . Row[0][0] means first box of row 1 and column 1 and so on. Response Format - row[0][0]:product 1; row[0][1]:product 1 and product 2;row[n][n]:product 1,2,3...n;";
+            prompt += $"\n Keep only one product in one box.";
+            prompt += $"\n Use this JSON format for response ```{{\"Row 1\": {{\"Box 1\": [\"Shampoo\"], \"Box 2\": [\"Hair Conditioner\"]}},\"Row 2\": {{\"Box 1\": \"Shaving Blades\"], \"Box 2\": [\"Conditioner\"],  \"Box n\": [\"Product n\"]}}```";
+            prompt += $"\n Add the response JSON in triple backticks (```)";
             foreach (var product in prdData)
             {
                 prompt += $"\n- {product.ProductName} (Season: {product.Seasonality}, Customer: {product.CustomerType}, Sales Volume: {product.SalesVolume})";
             }
-            prompt += $"\n Consider current season is {season}.";
-            prompt += $"\n Consider the shelf has {rows} rows and {columns} columns. It means that shelf has  {int.Parse(rows) * int.Parse(columns)} (rows * columns) boxes to arrange the product . Row[0][0] means first box of row 1 and column 1 and so on. Response Format - row[0][0]:product 1; row[0][1]:product 1 and product 2;row[n][n]:product 1,2,3...n;";
-            prompt += $"\n Use this format for response ```{{\"Row 1\": {{\"Box 1\": [\"Shampoo\", \"Conditioner\", \"Hair Color\"]}},\"Row 2\": {{\"Box 1\": [\"Shaving Cream\", \"Shaving Razor\", \"Shaving Blades\"]}}```";
+           
             return prompt;
         }
     }    

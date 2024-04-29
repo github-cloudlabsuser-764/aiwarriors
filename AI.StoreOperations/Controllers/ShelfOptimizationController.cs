@@ -41,8 +41,9 @@ namespace AI.StoreOperations.Controllers
             string prompt = Helper.Helper.GetPrompt(selectedProducts, season, rows, columns);
 
             var recommendation =  AzureOpenAI.GetShelfOptimizationRecommendations(prompt);
+            var result = Json(recommendation.Result);
 
-            return Json(new { success = true, message = "Products submitted successfully." });
+            return Json(new { success = true, message = result });
         }
 
         //[HttpPost]
