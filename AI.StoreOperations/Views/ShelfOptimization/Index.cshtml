@@ -1,0 +1,70 @@
+﻿@model List<AI.StoreOperations.Model.Product>
+@{
+    ViewData["Title"] = "Shelf Optimization Tool";
+
+    var distinctCategories = Model.Select(p => p.Category).Distinct().ToList();
+}
+<section>
+    <input type="hidden" id="prdList" name="prdList"/>
+    <h1>Shelf Optimization Tool</h1>
+    <div class="parameters">
+        
+        
+        <p>Select a category and sub-category to see the corresponding products:</p>
+
+        <!-- Category dropdown -->
+        <label for="category">Category:</label>
+        <select id="category">
+            <option value="">Select Category</option>
+            @foreach (var item in distinctCategories)
+            {
+                <option value="@item">@item</option>
+            }
+        </select>
+
+        <!-- Sub-category dropdown -->
+        <label for="subcategory">Sub-category:</label>
+        <select id="subcategory" disabled>
+            <option value="">Select Sub-category</option>               
+        </select>
+
+        <!-- Product list box -->
+        <label for="productlist">Products:</label>
+        <select id="productlist" multiple size="10" disabled>
+        </select>
+
+        <!-- Submit button -->
+        <button id="addProducts">Add Selected Products</button>       
+
+        <label for="selectedprdlist">Selected Products:</label>
+        <select id="selectedprdlist" multiple size="10">
+        </select>
+        
+        <p>Define the layout of Shelf (if Rows = 3 and Column =3, shelf will have total 3*3 =9 boxes where product can be placed).</p>
+        <label for="grdRow">Number of Rows:</label>
+        <input type="number" id="grdRow" name="grdRow" />
+        <label for="grdCol">Number of Column:</label>
+        <input type="number" id="grdCol" name="grdCol" />
+
+        <label for="season">Season</label>
+        <select id="season">
+            <option value="">Select Season</option>
+            <option value="All">All</option>
+            <option value="Summer">Summer</option>
+            <option value="Winter">Winter</option>
+            <option value="Spring">Spring</option>
+            <option value="Post-Monsoon">Post-Monsoon</option>
+        </select>
+
+
+        <!-- Display result message -->
+        <div id="result"></div>
+        <input type="submit" id="btnRecommendation" value="Get Recommendation">
+
+    </div>
+    <div id="grid-container" class="grid-container">
+        <!-- The grid will be populated by jQuery -->
+    </div>
+
+ </section>
+

@@ -1,0 +1,281 @@
+ProductId,ProductName,SalesVolume,Seasonality,CustomerType,Category,SubCategory,ActualPrice,DiscountedPrice
+P001,Shampoo,500,All,Adults,Personal Care,Hair Care,10.99,9.99
+P002,Conditioner,450,All,Adults,Personal Care,Hair Care,11.99,10.99
+P003,Body Wash,400,All,Adults,Personal Care,Body Care,12.99,11.99
+P004,Toothpaste,600,All,All,Personal Care,Oral Care,4.99,3.99
+P005,Deodorant,550,All,Adults,Personal Care,Body Care,7.99,6.99
+P006,Shaving Cream,350,All,Men,Personal Care,Shaving,5.99,4.99
+P007,Lotion,420,Winter,Adults,Personal Care,Body Care,6.99,5.99
+P008,Hair Gel,370,All,Men,Personal Care,Hair Care,8.99,7.99
+P009,Face Wash,390,All,Adults,Personal Care,Face Care,6.99,5.99
+P010,Shaving Razor,300,All,Men,Personal Care,Shaving,10.99,9.99
+P011,Lip Balm,310,Winter,All,Personal Care,Face Care,3.99,2.99
+P012,Hair Spray,320,All,Women,Personal Care,Hair Care,9.99,8.99
+P013,Sunscreen,420,Summer,Adults,Personal Care,Sun Care,15.99,13.99
+P014,Moisturizer,400,Winter,Adults,Personal Care,Face Care,12.99,10.99
+P015,Hand Sanitizer,430,All,All,Personal Care,Hand Care,4.99,3.99
+P016,Disinfectant Wipes,480,All,All,Household,Household Cleaners,7.99,6.99
+P017,Shaving Blades,290,All,Men,Personal Care,Shaving,14.99,12.99
+P018,Nail Polish,350,All,Women,Personal Care,Nails,8.99,7.99
+P019,Foundation,330,All,Women,Personal Care,Makeup,18.99,16.99
+P020,Eye Liner,300,All,Women,Personal Care,Makeup,9.99,8.99
+P021,Mascara,310,All,Women,Personal Care,Makeup,12.99,10.99
+P022,Blush,320,All,Women,Personal Care,Makeup,13.99,12.99
+P023,Eyeshadow,280,All,Women,Personal Care,Makeup,11.99,10.99
+P024,Face Mask,400,All,All,Personal Care,Face Care,14.99,12.99
+P025,Hand Soap,440,All,All,Household,Hand Care,4.99,3.99
+P026,Foot Cream,330,Winter,Adults,Personal Care,Foot Care,6.99,5.99
+P027,Hair Mousse,340,All,Women,Personal Care,Hair Care,9.99,8.99
+P028,Shower Gel,370,All,Adults,Personal Care,Body Care,7.99,6.99
+P029,Bubble Bath,310,All,Kids,Personal Care,Body Care,6.99,5.99
+P030,Bath Bomb,350,All,All,Personal Care,Bath Care,5.99,4.99
+P031,Hair Color,380,All,Adults,Personal Care,Hair Care,14.99,12.99
+P032,Nail Clipper,290,All,All,Personal Care,Nails,3.99,2.99
+P033,Body Oil,300,All,Adults,Personal Care,Body Care,10.99,8.99
+P034,Perfume,410,All,Adults,Personal Care,Fragrance,25.99,22.99
+P035,Cologne,390,All,Men,Personal Care,Fragrance,27.99,24.99
+P036,Aftershave,270,All,Men,Personal Care,Shaving,11.99,10.99
+P037,Makeup Remover,360,All,Women,Personal Care,Face Care,6.99,5.99
+P038,Foot Scrub,310,All,Adults,Personal Care,Foot Care,7.99,6.99
+P039,Hair Conditioner,420,All,Adults,Personal Care,Hair Care,11.99,9.99
+P040,Hair Serum,360,All,Women,Personal Care,Hair Care,13.99,11.99
+P041,Whitening Toothpaste,410,All,All,Personal Care,Oral Care,6.99,5.99
+P042,Toothbrush,600,All,All,Personal Care,Oral Care,3.99,2.99
+P043,Electric Toothbrush,320,All,All,Personal Care,Oral Care,29.99,25.99
+P044,Mouthwash,470,All,All,Personal Care,Oral Care,8.99,6.99
+P045,Floss,340,All,All,Personal Care,Oral Care,4.99,3.99
+P046,Hair Bands,290,All,Kids,Personal Care,Hair Care,3.99,2.99
+P047,Bath Sponges,320,All,All,Personal Care,Bath Care,5.99,4.99
+P048,Hair Curlers,370,All,Women,Personal Care,Hair Care,11.99,9.99
+P049,Ear Swabs,350,All,All,Personal Care,Ear Care,3.99,2.99
+P050,Hair Brush,390,All,All,Personal Care,Hair Care,7.99,6.99
+P051,Face Cream,380,All,Adults,Personal Care,Face Care,12.99,10.99
+P052,Eye Cream,370,All,Adults,Personal Care,Face Care,14.99,12.99
+P053,Facial Serum,400,All,Adults,Personal Care,Face Care,16.99,14.99
+P054,Bath Towels,420,All,All,Household,Household Linen,9.99,7.99
+P055,Bath Mats,320,All,All,Household,Household Linen,7.99,6.99
+P056,Shower Curtains,330,All,All,Household,Household Linen,14.99,12.99
+P057,Hair Dye,390,All,Adults,Personal Care,Hair Care,14.99,11.99
+P058,Body Lotion,450,All,Adults,Personal Care,Body Care,8.99,7.99
+P059,Face Toner,370,All,Adults,Personal Care,Face Care,10.99,9.99
+P060,Facial Wipes,430,All,All,Personal Care,Face Care,6.99,5.99
+P061,Nose Strips,300,All,Adults,Personal Care,Face Care,6.99,5.99
+P062,Foot Lotion,310,All,Adults,Personal Care,Foot Care,7.99,6.99
+P063,Hand Cream,330,All,Adults,Personal Care,Hand Care,5.99,4.99
+P064,Beard Oil,310,All,Men,Personal Care,Shaving,9.99,7.99
+P065,Beard Balm,340,All,Men,Personal Care,Shaving,11.99,10.99
+P066,Beard Comb,290,All,Men,Personal Care,Shaving,3.99,2.99
+P067,Beard Trimmer,280,All,Men,Personal Care,Shaving,29.99,25.99
+P068,Body Scrub,360,All,Adults,Personal Care,Body Care,11.99,10.99
+P069,Hand Wash,400,All,All,Personal Care,Hand Care,5.99,4.99
+P070,Shaving Brush,300,All,Men,Personal Care,Shaving,8.99,7.99
+P071,Eye Drops,340,All,All,Personal Care,Eye Care,6.99,5.99
+P072,Nail Polish Remover,320,All,Women,Personal Care,Nails,5.99,4.99
+P073,Foot File,290,All,Adults,Personal Care,Foot Care,7.99,6.99
+P074,Hair Comb,380,All,All,Personal Care,Hair Care,3.99,2.99
+P075,Bath Powder,340,All,All,Personal Care,Bath Care,6.99,5.99
+P076,Body Wash for Kids,320,All,Kids,Personal Care,Body Care,6.99,5.99
+P077,Kids Shampoo,400,All,Kids,Personal Care,Hair Care,7.99,6.99
+P078,Bath Toys,310,All,Kids,Personal Care,Bath Care,6.99,5.99
+P079,Hair Clippers,330,All,All,Personal Care,Hair Care,24.99,19.99
+P080,Shaving Gel,360,All,Men,Personal Care,Shaving,6.99,5.99
+P081,Aftershave Balm,290,All,Men,Personal Care,Shaving,7.99,6.99
+P082,Makeup Brushes,320,All,Women,Personal Care,Makeup,15.99,12.99
+P083,Makeup Palette,340,All,Women,Personal Care,Makeup,24.99,19.99
+P084,Foot Lotion for Kids,270,All,Kids,Personal Care,Foot Care,5.99,4.99
+P085,Bath Foam,300,All,All,Personal Care,Bath Care,8.99,7.99
+P086,Bath Brushes,310,All,All,Personal Care,Bath Care,5.99,4.99
+P087,Hair Dryer,430,All,Adults,Personal Care,Hair Care,49.99,44.99
+P088,Foot Balm,350,All,Adults,Personal Care,Foot Care,7.99,6.99
+P089,Body Lotion for Kids,310,All,Kids,Personal Care,Body Care,6.99,5.99
+P090,Deodorant Spray,350,All,Adults,Personal Care,Body Care,7.99,6.99
+P091,Shaving Razors for Women,280,All,Women,Personal Care,Shaving,9.99,7.99
+P092,Electric Razors,330,All,Adults,Personal Care,Shaving,39.99,34.99
+P093,Beard Scissors,310,All,Men,Personal Care,Shaving,6.99,5.99
+P094,Hair Clippers for Men,340,All,Men,Personal Care,Shaving,29.99,25.99
+P095,Nail Clippers for Kids,310,All,Kids,Personal Care,Nails,3.99,2.99
+P096,Bath Bombs for Kids,320,All,Kids,Personal Care,Bath Care,5.99,4.99
+P097,Hair Rollers,320,All,Women,Personal Care,Hair Care,11.99,9.99
+P098,Bath Salts,340,All,Adults,Personal Care,Bath Care,9.99,7.99
+P099,Bath Milk,300,All,Adults,Personal Care,Bath Care,8.99,6.99
+P100,Bath Beads,330,All,Adults,Personal Care,Bath Care,7.99,6.99
+P101,Sunglasses,500,Summer,Adults,Accessories,Eye Wear,25.99,22.99
+P102,Swim Shorts,350,Summer,Adults,Clothing,Swimwear,19.99,15.99
+P103,Flip Flops,320,Summer,All,Footwear,Sandals,12.99,9.99
+P104,BBQ Grill,420,Summer,Adults,Outdoor,Grilling,199.99,179.99
+P105,Portable Fan,450,Summer,All,Electronics,Fans,49.99,39.99
+P106,Ice Cream Maker,300,Summer,All,Home Appliances,Kitchen,89.99,79.99
+P107,Outdoor Tent,270,Summer,Adults,Outdoor,Camping Gear,149.99,129.99
+P108,Beach Towel,380,Summer,All,Accessories,Beach Gear,15.99,12.99
+P109,Sunscreen Lotion,340,Summer,Adults,Personal Care,Sun Care,10.99,8.99
+P110,Pool Float,390,Summer,All,Outdoor,Pool Gear,29.99,24.99
+P111,Beach Umbrella,310,Summer,All,Outdoor,Beach Gear,49.99,39.99
+P112,Inflatable Pool,420,Summer,All,Outdoor,Pool Gear,59.99,49.99
+P113,Waterproof Camera,330,Summer,All,Electronics,Cameras,129.99,119.99
+P114,Snorkeling Gear,310,Summer,Adults,Outdoor,Water Sports,59.99,49.99
+P115,Camping Stove,380,Summer,Adults,Outdoor,Camping Gear,99.99,89.99
+P116,Picnic Basket,320,Summer,All,Outdoor,Picnic Gear,39.99,34.99
+P117,Pool Noodles,300,Summer,All,Outdoor,Pool Gear,9.99,7.99
+P118,Waterproof Bag,270,Summer,All,Accessories,Travel Gear,29.99,24.99
+P119,Floating Cooler,350,Summer,All,Outdoor,Pool Gear,34.99,29.99
+P120,Portable Barbecue,390,Summer,Adults,Outdoor,Grilling,79.99,69.99
+P121,Sun Hat,310,Summer,Adults,Accessories,Hats,19.99,15.99
+P122,Beach Ball,370,Summer,All,Outdoor,Beach Gear,5.99,4.99
+P123,Water Shoes,330,Summer,All,Footwear,Swimwear,25.99,19.99
+P124,Outdoor Lantern,340,Summer,All,Outdoor,Camping Gear,29.99,24.99
+P125,Swim Goggles,310,Summer,All,Outdoor,Swimwear,14.99,11.99
+P126,Hiking Boots,320,Spring,Adults,Footwear,Boots,79.99,69.99
+P127,Trekking Poles,300,Spring,Adults,Outdoor,Hiking Gear,49.99,39.99
+P128,Camping Hammock,360,Spring,All,Outdoor,Camping Gear,59.99,49.99
+P129,Binoculars,310,Spring,Adults,Electronics,Optics,59.99,49.99
+P130,Portable Cooler,320,Spring,All,Outdoor,Camping Gear,69.99,59.99
+P131,Backpack,350,Spring,All,Accessories,Travel Gear,29.99,24.99
+P132,Portable Charger,270,All,All,Electronics,Phone Accessories,39.99,34.99
+P133,Folding Chair,300,Spring,All,Outdoor,Camping Gear,29.99,24.99
+P134,Outdoor Grill,390,Spring,Adults,Outdoor,Grilling,129.99,119.99
+P135,Camping Blanket,320,Spring,All,Outdoor,Camping Gear,49.99,39.99
+P136,Hiking Jacket,340,Spring,Adults,Clothing,Jackets,79.99,69.99
+P137,Outdoor Stove,330,Spring,Adults,Outdoor,Camping Gear,89.99,79.99
+P138,Camping Pillow,310,Spring,All,Outdoor,Camping Gear,19.99,15.99
+P139,Fleece Hoodie,370,Spring,All,Clothing,Jackets,49.99,39.99
+P140,Portable Speaker,320,Spring,All,Electronics,Audio,59.99,49.99
+P141,Camping Cot,360,Spring,All,Outdoor,Camping Gear,79.99,69.99
+P142,Portable Grill,300,Spring,Adults,Outdoor,Grilling,89.99,79.99
+P143,Portable Table,310,Spring,All,Outdoor,Camping Gear,39.99,34.99
+P144,Folding Wagon,330,Spring,All,Outdoor,Camping Gear,59.99,49.99
+P145,Fire Starter,320,All,Adults,Outdoor,Camping Gear,19.99,14.99
+P146,Outdoor Games,350,Spring,All,Outdoor,Games,24.99,19.99
+P147,Collapsible Bucket,370,All,All,Outdoor,Camping Gear,14.99,11.99
+P148,Backpacking Stove,330,Spring,Adults,Outdoor,Camping Gear,39.99,34.99
+P149,Camping Utensils,300,All,All,Outdoor,Camping Gear,19.99,15.99
+P150,Foldable Shovel,340,All,All,Outdoor,Camping Gear,24.99,19.99
+P151,Water Bottle,310,All,All,Accessories,Travel Gear,14.99,11.99
+P152,Insulated Thermos,350,All,All,Outdoor,Travel Gear,24.99,19.99
+P153,Outdoor Tent,380,Spring,All,Outdoor,Camping Gear,199.99,179.99
+P154,Outdoor Heater,360,Spring,All,Outdoor,Outdoor Equipment,129.99,109.99
+P155,Portable Blender,320,All,All,Electronics,Kitchen,49.99,39.99
+P156,Portable Power Bank,310,All,All,Electronics,Phone Accessories,34.99,29.99
+P157,Portable Fan,370,All,All,Electronics,Fans,29.99,24.99
+P158,Foldable Tarp,330,All,All,Outdoor,Camping Gear,19.99,15.99
+P159,Collapsible Tent,360,All,All,Outdoor,Camping Gear,79.99,69.99
+P160,Camping Stakes,300,All,All,Outdoor,Camping Gear,9.99,7.99
+P161,Camping Stakes,310,All,All,Outdoor,Camping Gear,9.99,7.99
+P162,Water Filter,340,All,All,Outdoor,Camping Gear,39.99,34.99
+P163,Outdoor Flashlight,350,All,All,Outdoor,Outdoor Equipment,24.99,19.99
+P164,Portable Coffee Maker,370,All,All,Electronics,Kitchen,49.99,39.99
+P165,Portable Microwave,310,All,All,Electronics,Kitchen,89.99,79.99
+P166,Travel Mug,350,All,All,Accessories,Travel Gear,14.99,11.99
+P167,Travel Adapter,320,All,All,Accessories,Travel Gear,29.99,24.99
+P168,Portable Vacuum,330,All,All,Electronics,Household Equipment,49.99,39.99
+P169,Portable Blender,360,All,All,Electronics,Kitchen,39.99,34.99
+P170,Portable Mixer,370,All,All,Electronics,Kitchen,59.99,49.99
+P171,Portable Grill,310,Spring,All,Outdoor,Grilling,89.99,79.99
+P172,Portable Grill,330,All,All,Outdoor,Grilling,89.99,79.99
+P173,Portable Fan,340,All,All,Electronics,Fans,29.99,24.99
+P174,Portable Charger,320,All,All,Electronics,Phone Accessories,34.99,29.99
+P175,Folding Chair,300,Spring,All,Outdoor,Camping Gear,29.99,24.99
+P176,Outdoor Lantern,390,Summer,All,Outdoor,Camping Gear,29.99,24.99
+P177,Folding Table,320,Spring,All,Outdoor,Camping Gear,39.99,34.99
+P178,Folding Tarp,310,All,All,Outdoor,Camping Gear,19.99,15.99
+P179,Camping Stakes,310,All,All,Outdoor,Camping Gear,9.99,7.99
+P180,Water Filter,340,All,All,Outdoor,Camping Gear,39.99,34.99
+P181,Camping Cot,310,All,All,Outdoor,Camping Gear,79.99,69.99
+P182,Camping Mat,330,All,All,Outdoor,Camping Gear,29.99,24.99
+P183,Foldable Camping Cot,320,All,All,Outdoor,Camping Gear,89.99,79.99
+P184,Portable Stove,310,All,All,Outdoor,Camping Gear,49.99,39.99
+P185,Portable Fan,330,All,All,Electronics,Fans,29.99,24.99
+P186,Portable Grill,310,All,All,Outdoor,Grilling,89.99,79.99
+P187,Folding Camping Cot,310,All,All,Outdoor,Camping Gear,89.99,79.99
+P188,Foldable Tarp,340,All,All,Outdoor,Camping Gear,19.99,15.99
+P189,Foldable Grill,310,Spring,All,Outdoor,Camping Gear,49.99,39.99
+P190,Portable Grill,310,All,All,Outdoor,Grilling,89.99,79.99
+P191,Portable Fan,310,All,All,Electronics,Fans,29.99,24.99
+P192,Foldable Shovel,310,All,All,Outdoor,Camping Gear,24.99,19.99
+P193,Portable Grill,330,All,All,Outdoor,Grilling,89.99,79.99
+P194,Outdoor Heater,310,Spring,All,Outdoor,Outdoor Equipment,129.99,109.99
+P195,Foldable Camping Cot,310,All,All,Outdoor,Camping Gear,89.99,79.99
+P196,Camping Stakes,310,All,All,Outdoor,Camping Gear,9.99,7.99
+P197,Foldable Grill,310,All,All,Outdoor,Grilling,89.99,79.99
+P198,Foldable Camping Cot,310,All,All,Outdoor,Camping Gear,89.99,79.99
+P199,Foldable Shovel,310,All,All,Outdoor,Camping Gear,24.99,19.99
+P200,Camping Mat,310,All,All,Outdoor,Camping Gear,49.99,39.99
+P201,Woolen Scarf,350,Winter,Adults,Clothing,Accessories,19.99,15.99
+P202,Winter Gloves,400,Winter,Adults,Clothing,Accessories,24.99,19.99
+P203,Woolen Hat,320,Winter,All,Clothing,Accessories,15.99,12.99
+P204,Thermal Socks,310,Winter,All,Clothing,Accessories,12.99,9.99
+P205,Snow Boots,350,Winter,Adults,Footwear,Boots,79.99,69.99
+P206,Snow Shovel,300,Winter,All,Household,Tools,29.99,24.99
+P207,Electric Blanket,330,Winter,All,Household,Bedding,49.99,39.99
+P208,Heated Gloves,310,Winter,Adults,Clothing,Accessories,39.99,34.99
+P209,Hot Water Bottle,320,Winter,All,Household,Comfort,19.99,14.99
+P210,Winter Coat,420,Winter,Adults,Clothing,Coats,129.99,119.99
+P211,Thermal Underwear,330,Winter,Adults,Clothing,Underwear,39.99,34.99
+P212,Snow Jacket,340,Winter,All,Clothing,Coats,79.99,69.99
+P213,Winter Pajamas,310,Winter,All,Clothing,Comfort,29.99,24.99
+P214,Ski Goggles,280,Winter,All,Accessories,Outdoor Gear,49.99,39.99
+P215,Ski Jacket,370,Winter,Adults,Clothing,Coats,99.99,89.99
+P216,Ski Pants,350,Winter,Adults,Clothing,Bottoms,79.99,69.99
+P217,Space Heater,310,Winter,All,Household,Heating,59.99,49.99
+P218,Hand Warmers,330,Winter,All,Accessories,Comfort,9.99,7.99
+P219,Thermal Blanket,320,Winter,All,Household,Bedding,29.99,24.99
+P220,Electric Kettle,350,Winter,All,Household,Kitchen Appliances,29.99,24.99
+P221,Heated Slippers,310,Winter,Adults,Footwear,Slippers,29.99,24.99
+P222,Heated Socks,310,Winter,All,Footwear,Socks,24.99,19.99
+P223,Fireplace Tools,320,Winter,All,Household,Fireplace Accessories,39.99,34.99
+P224,Portable Fireplace,350,Winter,All,Household,Fireplace,129.99,119.99
+P225,Electric Fireplace,310,Winter,All,Household,Fireplace,199.99,179.99
+P226,Electric Radiator,370,Winter,All,Household,Heating,89.99,79.99
+P227,Electric Hotplate,330,Winter,All,Household,Kitchen Appliances,39.99,34.99
+P228,Heated Mattress Pad,340,Winter,All,Household,Bedding,49.99,39.99
+P229,Winter Sweater,360,Winter,Adults,Clothing,Top Wear,29.99,24.99
+P230,Heated Steering Wheel Cover,310,Winter,All,Automotive,Car Accessories,29.99,24.99
+P231,Car Defroster,320,Winter,All,Automotive,Car Accessories,39.99,34.99
+P232,Windshield Scraper,300,Winter,All,Automotive,Car Accessories,9.99,7.99
+P233,Heated Seat Cushion,330,Winter,All,Automotive,Car Accessories,49.99,39.99
+P234,Snowboard,310,Winter,Adults,Outdoor,Winter Sports,149.99,129.99
+P235,Snowshoes,360,Winter,Adults,Outdoor,Winter Sports,99.99,89.99
+P236,Ski Poles,310,Winter,Adults,Outdoor,Winter Sports,29.99,24.99
+P237,Sled,340,Winter,All,Outdoor,Winter Sports,39.99,34.99
+P238,Electric Snow Blower,380,Winter,All,Household,Outdoor Equipment,299.99,249.99
+P239,Ice Melt,310,Winter,All,Household,Outdoor Equipment,19.99,14.99
+P240,Snow Rake,350,Winter,All,Household,Outdoor Equipment,29.99,24.99
+P301,Gardening Gloves,320,Post-Monsoon,Adults,Outdoor,Gardening,12.99,10.99
+P302,Pruning Shears,270,Post-Monsoon,All,Outdoor,Gardening Tools,14.99,11.99
+P303,Leaf Rake,350,Post-Monsoon,All,Outdoor,Gardening Tools,19.99,15.99
+P304,Lawn Mower,290,Post-Monsoon,Adults,Outdoor,Gardening Tools,99.99,89.99
+P305,Compost Bin,250,Post-Monsoon,All,Outdoor,Gardening,39.99,34.99
+P306,Outdoor Grill,300,Post-Monsoon,Adults,Outdoor,Grilling,129.99,119.99
+P307,Patio Heater,320,Post-Monsoon,All,Outdoor,Patio Accessories,199.99,179.99
+P308,Folding Patio Chair,330,Post-Monsoon,All,Outdoor,Patio Accessories,29.99,24.99
+P309,Outdoor Umbrella,340,Post-Monsoon,All,Outdoor,Patio Accessories,69.99,59.99
+P310,Outdoor Table,310,Post-Monsoon,All,Outdoor,Patio Accessories,49.99,44.99
+P311,Garden Hose,280,Post-Monsoon,All,Outdoor,Gardening,19.99,14.99
+P312,Watering Can,270,Post-Monsoon,All,Outdoor,Gardening,14.99,11.99
+P313,Outdoor Rug,320,Post-Monsoon,All,Outdoor,Patio Accessories,59.99,49.99
+P314,Picnic Basket,310,Post-Monsoon,All,Outdoor,Picnic Gear,34.99,29.99
+P315,Outdoor Lantern,290,Post-Monsoon,All,Outdoor,Camping Gear,24.99,19.99
+P316,Garden Furniture,350,Post-Monsoon,All,Outdoor,Patio Accessories,199.99,179.99
+P317,Fire Pit,310,Post-Monsoon,All,Outdoor,Patio Accessories,149.99,129.99
+P318,Gardening Trowel,280,Post-Monsoon,All,Outdoor,Gardening Tools,9.99,7.99
+P319,Plant Fertilizer,300,Post-Monsoon,All,Outdoor,Gardening,19.99,15.99
+P320,Wind Chimes,290,Post-Monsoon,All,Outdoor,Patio Accessories,14.99,11.99
+P321,Garden Statue,270,Post-Monsoon,All,Outdoor,Patio Accessories,39.99,34.99
+P322,Garden Bench,340,Post-Monsoon,All,Outdoor,Patio Accessories,89.99,79.99
+P323,Garden Shed,360,Post-Monsoon,All,Outdoor,Storage,299.99,249.99
+P324,Outdoor Lighting,310,Post-Monsoon,All,Outdoor,Patio Accessories,79.99,69.99
+P325,Garden Sprinkler,280,Post-Monsoon,All,Outdoor,Gardening Tools,19.99,14.99
+P326,Garden Trellis,290,Post-Monsoon,All,Outdoor,Gardening,29.99,24.99
+P327,Outdoor Cooler,310,Post-Monsoon,All,Outdoor,Picnic Gear,69.99,59.99
+P328,Folding Camping Chair,330,Post-Monsoon,All,Outdoor,Camping Gear,39.99,34.99
+P329,Garden Stakes,280,Post-Monsoon,All,Outdoor,Gardening,9.99,7.99
+P330,Garden Kneeler,270,Post-Monsoon,All,Outdoor,Gardening,24.99,19.99
+P331,Portable Speaker,350,Post-Monsoon,All,Electronics,Audio,59.99,49.99
+P332,Outdoor Projector,310,Post-Monsoon,All,Electronics,Projectors,149.99,129.99
+P333,Wind Spinner,280,Post-Monsoon,All,Outdoor,Patio Accessories,29.99,24.99
+P334,Garden Sprayer,290,Post-Monsoon,All,Outdoor,Gardening Tools,19.99,14.99
+P335,Outdoor Fan,320,Post-Monsoon,All,Outdoor,Patio Accessories,69.99,59.99
+P336,Patio Sofa,340,Post-Monsoon,All,Outdoor,Patio Accessories,299.99,249.99
+P337,Outdoor Fire Bowl,310,Post-Monsoon,All,Outdoor,Patio Accessories,99.99,89.99
+P338,Picnic Blanket,300,Post-Monsoon,All,Outdoor,Picnic Gear,24.99,19.99
+P339,Outdoor Binoculars,320,Post-Monsoon,All,Outdoor,Outdoor Gear,49.99,44.99
+P340,Foldable Tarp,280,Post-Monsoon,All,Outdoor,Camping Gear,19.99,15.99

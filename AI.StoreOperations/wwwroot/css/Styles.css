@@ -1,0 +1,133 @@
+﻿
+h1 {
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+    nav li a {
+        display: block;
+        color: #fff;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+        nav li a:hover {
+            background-color: #111;
+        }
+
+main {
+    margin: 20px;
+}
+/* Base styling for the page */
+body {
+    font-family: Arial, sans-serif; /* Clean and commonly used font */
+    background-color: #f9f9f9; /* Light background color */
+    color: #333; /* Standard text color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Heading styling */
+h1 {
+    text-align: center; /* Centered heading */
+    color: #333; /* Darker text for headings */
+    font-size: 2em; /* Larger font for emphasis */
+    margin: 20px 0; /* Spacing around heading */
+}
+
+/* Container for form elements */
+.parameters {
+    max-width: 800px; /* Limit the maximum width */
+    margin: 0 auto; /* Center align the container */
+    padding: 20px; /* Padding within the container */
+    background-color: #fff; /* White background for better contrast */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+/* Label styling */
+label {
+    font-weight: bold; /* Bold labels for emphasis */
+    margin-top: 15px; /* Spacing above labels */
+    display: block; /* Block display to ensure labels are on their own line */
+}
+
+/* Paragraph styling */
+p {
+    margin-bottom: 15px; /* Spacing below paragraphs */
+}
+
+/* Dropdown styling */
+select {
+    padding: 10px; /* Padding inside dropdowns */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    width: 100%; /* Full width */
+}
+
+/* Button styling */
+button, input[type="submit"] {
+    background-color: #007bff; /* Blue button color */
+    color: #fff; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding inside button */
+    font-size: 1em; /* Standard font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+    button:hover, input[type="submit"]:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+    }
+
+/* Disabled dropdown styling */
+select[disabled] {
+    background-color: #f0f0f0; /* Light background for disabled state */
+    color: #999; /* Lighter text color for disabled state */
+}
+
+/* Styling for result message */
+#result {
+    font-size: 1.2em; /* Slightly larger font */
+    color: #28a745; /* Green color for success messages */
+    margin-top: 15px; /* Spacing above result message */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Adjust based on the number of columns */
+    grid-template-rows: repeat(3, 1fr); /* Adjust based on the number of rows */
+    gap: 10px; /* Spacing between grid cells */
+    padding: 20px; /* Padding around the grid */
+    background-color: #f0f0f0; /* Light background color */
+}
+
+.grid-cell {
+    background-color: white; /* White background for cells */
+    border: 1px solid #ddd; /* Light border around cells */
+    padding: 10px; /* Padding inside cells */
+    text-align: center; /* Center-align text */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+    .grid-cell strong {
+        color: #333; /* Darker color for headings */
+    }
