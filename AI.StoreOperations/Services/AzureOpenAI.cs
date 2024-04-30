@@ -8,10 +8,13 @@ namespace AI.StoreOperations.Services
 {
     public class AzureOpenAI
     {
-        private static readonly string endpoint = "https://cgaiservice.openai.azure.com/openai/deployments/my-gpt35-model/chat/completions?api-version=2024-02-15-preview"; // Your Azure OpenAI endpoint
-        private static readonly string apiKey = "867ec0de987c46be8aabb85104726996"; // Your Azure OpenAI API key
-        private static readonly string deploymentName = "my-gpt35-model"; // Name of your deployment
+        //private static readonly string endpoint = "https://cgaiservice.openai.azure.com/openai/deployments/my-gpt35-model/chat/completions?api-version=2024-02-15-preview"; // Your Azure OpenAI endpoint
+        //private static readonly string apiKey = "867ec0de987c46be8aabb85104726926"; // Your Azure OpenAI API key
+        //private static readonly string deploymentName = "my-gpt35-model"; // Name of your deployment
 
+        private static readonly string endpoint = "https://aiservicecg.openai.azure.com/openai/deployments/aiwarriers-gtp35-model/chat/completions?api-version=2024-02-15-preview"; // Your Azure OpenAI endpoint
+        private static readonly string apiKey = "7cace4bede8a4346b1f4543303ac7911"; // Your Azure OpenAI API key
+        private static readonly string deploymentName = "my-gpt35-model"; // Name of your deployment
         public static async Task<string> GetShelfOptimizationRecommendations(string prompt)
         {
             using (HttpClient client = new HttpClient())
