@@ -39,6 +39,43 @@ namespace AI.StoreOperations.Helper
             return products;
         }
 
+        public static List<Transaction> GetTransactions()
+        {
+            var transactions = new List<Transaction>();
+            string filePath = @"\TransactionData.csv";
+            using (var reader = new StreamReader(filePath))
+            {
+                int i = 0;
+                while (!reader.EndOfStream)
+                {
+                    var line = reader.ReadLine();
+                    var values = line.Split(',');
+                    if (i != 0)
+                    {
+                        var tran = new Transaction()
+                        {
+                            TransactionId = values[0],
+                            CustomerName = values[1],
+                            CustomerGender = values[2],
+                            CustomerAge = Convert.ToInt32(values[3]),
+                            Country = values[4],
+                            TransactionDate = values[5],
+                            Region = values[6],
+                            Channel = values[7],
+                            Category = values[8],
+                            Product = values[9],
+                            Amount = Convert.ToDouble(values[10])
+
+                        };
+                        transactions.Add(tran);
+                    }
+                    i++;
+
+                }
+            }
+            return transactions;
+        }
+
         public static string GetPrompt(List<Product> prdData, string season, string rows, string columns)
         {
             
