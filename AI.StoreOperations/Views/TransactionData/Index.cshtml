@@ -1,0 +1,41 @@
+﻿@model List<AI.StoreOperations.Model.Transaction>
+@{
+    ViewData["Title"] = "Transaction Details";
+
+    var distinctChannels= Model.Select(p=>p.Channel).Distinct().ToList();
+    var distinctCategories = Model.Select(p => p.Category).Distinct().ToList();
+}
+<section>
+    <input type="hidden" id="prdList" name="prdList" />
+    <h1>Transaction Details</h1>
+    <div class="parameters">
+
+
+        <p>Select the required filter to see the corresponding transactions:</p>
+        <label for="category">Category:</label>
+        <select id="category">
+            <option value="">Select Category</option>
+            @foreach (var item in distinctCategories)
+            {
+                <option value="@item">@item</option>
+            }
+        </select>
+        <label for="channel">Channel:</label>
+        <select id="channel">
+            <option value="">Select Channel</option>
+            @foreach (var item in distinctChannels)
+            {
+                <option value="@item">@item</option>
+            }
+        </select>
+        <!-- Display result message -->
+        <div id="result"></div>
+        <input type="submit" id="btnTransaction" value="Get Transaction">
+
+    </div>
+        <br />
+        <p>Transactions are</p>
+        <div id="div-tran" >
+           
+        </div>
+    </section>

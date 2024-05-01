@@ -99,7 +99,36 @@
         else {
                     $('#result').text('Please select at least one product.');
               }
-          });
+    });
+
+    //Transaction
+    $('#btnTransaction').click(function () {
+        var selectedCategory = $("#category").val();
+        var selectedChannel = $("#channel").val();
+
+        $.getJSON('/TransactionData/GetSeleactedTransactions' + queryString, function (data) {
+            console.log(data.message.value);
+            var jsonData = JSON.parse(data.message.value);
+            var messageData = jsonData.choices[0].message.content;
+            var backtickJson;
+            if (messageData.startsWith("{")) {
+                backtickJson = JSON.parse(messageData);
+            }
+            else {
+                let regex = /`([^`]+)`/g;
+                let matches = messageData.match(regex);
+                let backtickString = matches[0].replace(/`/g, '');
+                backtickJson = JSON.parse(backtickString);
+            }
+
+            console.log(backtickJson);
+            $('#div-tran').append(result);
+        })
+            .fail(function () {
+                alert('Error');
+            });
+    });
+      
 });
 
 function createGrid(rows, columns, data) {

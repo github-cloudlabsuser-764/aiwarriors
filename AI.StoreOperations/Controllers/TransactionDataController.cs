@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AI.StoreOperations.Model;
 
 namespace AI.StoreOperations.Controllers
 {
@@ -13,5 +14,18 @@ namespace AI.StoreOperations.Controllers
             List<Transaction> transactions = Helper.Helper.GetTransactions();
             return View(transactions);
         }
+
+        public JsonResult GetSeleactedTransactions(string category, string channel)
+        {
+            List<Transaction> transactions = Helper.Helper.GetTransactions();
+            // Create a prompt to send to Azure OpenAI
+            string prompt = Helper.Helper.GetPrompt(transactions, season, rows, columns);
+
+            var recommendation = AzureOpenAI.GetShelfOptimizationRecommendations(prompt);
+            var result = Json(recommendation.Result);
+
+            return Json(new { success = true, message = result });
+        }
+
     }
 }
