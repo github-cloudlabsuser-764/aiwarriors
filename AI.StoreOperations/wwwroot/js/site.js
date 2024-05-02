@@ -126,7 +126,7 @@
                 }
 
                 console.log(backtickJson);
-                createTable(data);
+                ('#div-result').append(createTable(data));
             })
                 .fail(function () {
                     alert('Error');
@@ -213,4 +213,29 @@ function createTable(data) {
 //    // Create a 3x3 grid with the given data
 //    createGrid(3, 3, gridData);
 //});
+
+//Sample JSONDATA for transactions
+
+//    {
+//        "Electronics": {
+//            "Laptop": {
+//                "North America": 2,
+//                "India": 1
+//            },
+//            "Smartphone": {
+//                "North America": 1,
+//                "India": 1
+//            }
+//        },
+//        "ELectricals": {
+//            "Wires": {
+//                "North America": 2,
+//                "India": 1
+//            },
+//            "Cables": {
+//                "North America": 1,
+//                "India": 1
+//            }
+//        }
+//    }
 
