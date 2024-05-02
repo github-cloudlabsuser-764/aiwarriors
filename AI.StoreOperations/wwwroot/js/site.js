@@ -103,30 +103,35 @@
 
     //Transaction
     $('#btnTransaction').click(function () {
-        var selectedCategory = $("#category").val();
+
         var selectedChannel = $("#channel").val();
+        if (selectedChannel && selectedChannel.length >= 0) {
 
-        $.getJSON('/TransactionData/GetSeleactedTransactions' + queryString, function (data) {
-            console.log(data.message.value);
-            var jsonData = JSON.parse(data.message.value);
-            var messageData = jsonData.choices[0].message.content;
-            var backtickJson;
-            if (messageData.startsWith("{")) {
-                backtickJson = JSON.parse(messageData);
-            }
-            else {
-                let regex = /`([^`]+)`/g;
-                let matches = messageData.match(regex);
-                let backtickString = matches[0].replace(/`/g, '');
-                backtickJson = JSON.parse(backtickString);
-            }
+            var queryString = `?selectedChannel=${selectedChannel}`;
 
-            console.log(backtickJson);
-            $('#div-tran').append(result);
-        })
-            .fail(function () {
-                alert('Error');
-            });
+
+            $.getJSON('/TransactionData/GetSeleactedTransactions' + queryString, function (data) {
+                console.log(data.message.value);
+                var jsonData = JSON.parse(data.message.value);
+                var messageData = jsonData.choices[0].message.content;
+                var backtickJson;
+                if (messageData.startsWith("{")) {
+                    backtickJson = JSON.parse(messageData);
+                }
+                else {
+                    let regex = /`([^`]+)`/g;
+                    let matches = messageData.match(regex);
+                    let backtickString = matches[0].replace(/`/g, '');
+                    backtickJson = JSON.parse(backtickString);
+                }
+
+                console.log(backtickJson);
+                createTable(data);
+            })
+                .fail(function () {
+                    alert('Error');
+                });
+        }
     });
       
 });
@@ -168,6 +173,22 @@ function createGrid(rows, columns, data) {
     }
 }
 
+function createTable(data) {
+    let tableHtml = '<table border="1">';
+    tableHtml += '<tr><th>Category</th><th>Product</th><th>Countries</th></tr>';
+
+    for (const category in data) {
+        const products = data[category];
+        for (const product in products) {
+            const regions = products[product];
+            tableHtml += `<tr><td>${category}</td><td>${product}</td><td>${regions}</td></tr>`;
+        }
+    }
+
+    tableHtml += '</table>';
+
+    return tableHtml;
+}
 // Example usage
 //$(document).ready(function () {
 //    // Sample JSON data for a 3x3 grid

@@ -15,11 +15,11 @@ namespace AI.StoreOperations.Controllers
             return View(transactions);
         }
 
-        public JsonResult GetSeleactedTransactions(string category, string channel)
+        public JsonResult GetSeleactedTransactions(string channel)
         {
             List<Transaction> transactions = Helper.Helper.GetTransactions();
             // Create a prompt to send to Azure OpenAI
-            string prompt = Helper.Helper.GetPrompt(transactions, season, rows, columns);
+            string prompt = Helper.Helper.GetTransactionPrompt(transactions, channel);
 
             var recommendation = AzureOpenAI.GetShelfOptimizationRecommendations(prompt);
             var result = Json(recommendation.Result);

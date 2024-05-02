@@ -92,5 +92,21 @@ namespace AI.StoreOperations.Helper
            
             return prompt;
         }
+
+        public static string GetTransactionPrompt(List<Transaction> transData, string channel)
+        {
+            var prompt = "Based on the following transactional data, suggest the recommended product with category.Consider Channel, Category, Product and Country in suggestion:";
+            prompt += $"\n Consider current Channel is {channel}.";
+            prompt += $"\n Add the number of transactions done for each product from each country based on current Channel.";
+            //Display all the corresponding transactions from the transactional data.
+            prompt += $"\n Use this JSON format for response ```{{\"Category 1\":{{\"Product 1\":{{\"Country 1\"}},{{\"Country n\"}}}},{{\"Product 2\":{{\"Country 1\"}},{{\"Country n\"}}}}}},{{\"Category 2\": {{\"Product 1\":{{\"Country 1\"}},{{\"Country n\"}}}},{{\"Product 2\":{{\"Country 1\"}},{{\"Country n\"}}}}}}```";
+            prompt += $"\nAdd the response JSON in triple backticks (```)";
+            foreach (var transaction in transData)
+            {
+                prompt += $"\n- {transaction.transactionID} (Channel:{transaction.Channel} Category: {transaction.Category}, Product: {transaction.Product}, Country: {transaction.Country})";
+            }
+
+            return prompt;
+        }
     }    
 }
