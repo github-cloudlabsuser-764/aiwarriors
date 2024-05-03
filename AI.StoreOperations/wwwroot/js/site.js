@@ -1,4 +1,5 @@
-﻿$(document).ready(function () {
+$(document).ready(function () {
+    $("#loadingId").hide();
     // Handle category change to load sub-categories
     $('#category').change(function () {
         var categoryId = $(this).val();
@@ -65,7 +66,7 @@
 
             //var st = "{  \"Row 1\": {    \"Box 1\": [\"Shampoo\", \"Conditioner\", \"Hair Color\"],    \"Box 2\": [\"Hair Conditioner\", \"Hair Dye\", \"Hair Brush\"],    \"Box 3\": [\"Hair Comb\"]  },  \"Row 2\": {    \"Box 1\": [\"Hair Gel\", \"Hair Curlers\", \"Kids Shampoo\"],    \"Box 2\": [\"Hair Mousse\", \"Hair Serum\"],    \"Box 3\": [\"Hair Bands\", \"Hair Rollers\", \"Shaving Cream\"]  }}";
 
-
+            $("#loadingId").show();
             $.getJSON('/ShelfOptimization/GetRecommendation' + queryString, function (data) {
                 console.log(data.message.value);
                 var jsonData = JSON.parse(data.message.value);
@@ -83,9 +84,11 @@
 
                 console.log(backtickJson);
                 createGrid(rows, columns, backtickJson);
+                $("#loadingId").hide();
             })
                 .fail(function () {
-                    alert('Error');
+                    $("#loadingId").hide();
+                    console.log("Some error occured.")
                 });
 
             //$.getJSON('/ShelfOptimization/GetRecommendation', { selectedProductIds: selectedProductIds, season, rows, columns },
@@ -184,7 +187,7 @@
 
             //var st = "{  \"Row 1\": {    \"Box 1\": [\"Shampoo\", \"Conditioner\", \"Hair Color\"],    \"Box 2\": [\"Hair Conditioner\", \"Hair Dye\", \"Hair Brush\"],    \"Box 3\": [\"Hair Comb\"]  },  \"Row 2\": {    \"Box 1\": [\"Hair Gel\", \"Hair Curlers\", \"Kids Shampoo\"],    \"Box 2\": [\"Hair Mousse\", \"Hair Serum\"],    \"Box 3\": [\"Hair Bands\", \"Hair Rollers\", \"Shaving Cream\"]  }}";
 
-
+            $("#loadingId").show();
             $.getJSON('/PackPricing/GetPackPricingButton' + queryString, function (data) {
                 console.log(data.message.value);
                 var jsonData = JSON.parse(data.message.value);
@@ -204,9 +207,11 @@
 
                 console.log(backtickJson);
                 createGrid(rows, columns, backtickJson);
+                $("#loadingId").hide();
             })
                 .fail(function () {
-                    alert('Error');
+                    console.log('Some error occured');
+                    $("#loadingId").hide();
                 });
 
             //$.getJSON('/ShelfOptimization/GetRecommendation', { selectedProductIds: selectedProductIds, season, rows, columns },
@@ -261,8 +266,8 @@ function createGrid(rows, columns, data) {
 }
 
 function createTable(data) {
-    let tableHtml = '<table  style="border:1px solid black">';
-    tableHtml += '<tr  style="border:1px solid black"><th>Category</th><th>Product</th><th>Countries</th></tr>';
+    let tableHtml = '<table border="1">';
+    tableHtml += '<tr><th>Category</th><th>Product</th><th>Countries</th></tr>';
 
     for (const category in data) {
         const products = data[category];
@@ -272,7 +277,7 @@ function createTable(data) {
             for (const country in regions) {
                 regionsHtml += `${country}: ${regions[country]}<br>`; // Format each country and value
             }
-            tableHtml += `<tr style="border:1px solid black"><td style="border:1px solid black">${category}</td><td style="border:1px solid black">${product}</td><td style="border:1px solid black">${regionsHtml}</td></tr>`;
+            tableHtml += `<tr><td>${category}</td><td>${product}</td><td>${regionsHtml}</td></tr>`;
         }
     }
 
