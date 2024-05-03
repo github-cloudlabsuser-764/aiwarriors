@@ -1,0 +1,61 @@
+﻿Transaction ID,Customer Name,CustomerGender,CustomerAge,Country,TransactionDate,Region,Channel,ActualPrice,DiscountedPrice,ProductId,ProductName,Category,SubCategory,Seasonality
+1001,John Smith,Male,35,USA,01-04-2024,North America,Online,800,798,P001,Shampoo,Personal Care,Hair Care,All
+1002,Emily Johnson,Female,28,Canada,02-04-2024,North America,In-store,60,58,P002,Conditioner,Personal Care,Hair Care,All
+1003,David Brown,Male,45,UK,03-04-2024,Europe,Online,200,198,P003,Body Wash,Personal Care,Body Care,All
+1004,Maria Garcia,Female,32,Spain,04-04-2024,Europe,In-store,1200,1198,P004,Toothpaste,Personal Care,Oral Care,All
+1005,Ahmed Khan,Male,40,UAE,05-04-2024,Middle East,Online,100,98,P005,Deodorant,Personal Care,Body Care,All
+1006,Wei Chen,Female,25,China,06-04-2024,Asia,In-store,20,18,P006,Shaving Cream,Personal Care,Shaving,All
+1007,Sophie Dupont,Female,38,France,07-04-2024,Europe,Online,80,78,P007,Lotion,Personal Care,Body Care,Winter
+1008,Michael Brown,Male,50,Australia,08-04-2024,Oceania,In-store,150,148,P008,Hair Gel,Personal Care,Hair Care,All
+1009,Priya Patel,Female,30,India,09-04-2024,Asia,Online,50,48,P009,Face Wash,Personal Care,Face Care,All
+1010,Juan Martinez,Male,29,Mexico,10-04-2024,North America,In-store,30,28,P010,Shaving Razor,Personal Care,Shaving,All
+1011,Sarah Kim,Female,27,South Korea,11-04-2024,Asia,Online,70,68,P011,Lip Balm,Personal Care,Face Care,Winter
+1012,Thomas Mueller,Male,55,Germany,12-04-2024,Europe,In-store,180,178,P012,Hair Spray,Personal Care,Hair Care,All
+1013,Alessia Rossi,Female,33,Italy,13-04-2024,Europe,Online,300,298,P013,Sunscreen,Personal Care,Sun Care,Summer
+1014,Mohamed Ali,Male,42,Egypt,14-04-2024,Middle East,In-store,40,38,P014,Moisturizer,Personal Care,Face Care,Winter
+1015,Yuko Tanaka,Female,31,Japan,15-04-2024,Asia,Online,25,23,P015,Hand Sanitizer,Personal Care,Hand Care,All
+1016,Liam Wilson,Male,37,Ireland,16-04-2024,Europe,In-store,90,88,P016,Disinfectant Wipes,Household,Household Cleaners,All
+1017,Gabriela Lopez,Female,26,Argentina,17-04-2024,South America,Online,60,58,P017,Shaving Blades,Personal Care,Shaving,All
+1018,Benjamin Lee,Male,48,Singapore,18-04-2024,Asia,In-store,300,298,P018,Nail Polish,Personal Care,Nails,All
+1019,Chloe Martin,Female,29,New Zealand,19-04-2024,Oceania,Online,70,68,P019,Foundation,Personal Care,Makeup,All
+1020,Carlos Fernandez,Male,36,Brazil,20-04-2024,South America,In-store,120,118,P020,Eye Liner,Personal Care,Makeup,All
+1021,Emma White,Female,34,Australia,21-04-2024,Oceania,Online,50,48,P021,Mascara,Personal Care,Makeup,All
+1022,Mohammad Khan,Male,43,Pakistan,22-04-2024,Asia,In-store,500,498,P022,Blush,Personal Care,Makeup,All
+1023,Elena Ivanova,Female,39,Russia,23-04-2024,Europe,Online,70,68,P023,Eyeshadow,Personal Care,Makeup,All
+1024,Ethan Miller,Male,31,USA,24-04-2024,North America,In-store,40,38,P024,Face Mask,Personal Care,Face Care,All
+1025,Mia Chen,Female,28,China,25-04-2024,Asia,Online,35,33,P025,Hand Soap,Household,Hand Care,All
+1026,Luca Conti,Male,39,Italy,26-04-2024,Europe,In-store,200,198,P026,Foot Cream,Personal Care,Foot Care,Winter
+1027,Isabella Silva,Female,36,Brazil,27-04-2024,South America,Online,60,58,P027,Hair Mousse,Personal Care,Hair Care,All
+1028,Amir Shah,Male,45,UAE,28-04-2024,Middle East,In-store,1000,998,P028,Shower Gel,Personal Care,Body Care,All
+1029,Nara Kim,Female,32,South Korea,29-04-2024,Asia,Online,90,88,P029,Bubble Bath,Personal Care,Body Care,All
+1030,Jack Brown,Male,40,UK,30-04-2024,Europe,In-store,50,48,P030,Bath Bomb,Personal Care,Bath Care,All
+1031,Luna Martinez,Female,27,Mexico,01-05-2024,North America,Online,80,78,P031,Hair Color,Personal Care,Hair Care,All
+1032,Adam Wright,Male,46,Canada,02-05-2024,North America,In-store,150,148,P032,Nail Clipper,Personal Care,Nails,All
+1033,Sara Costa,Female,35,Portugal,03-05-2024,Europe,Online,70,68,P033,Body Oil,Personal Care,Body Care,All
+1034,Mohammad Khan,Male,43,Pakistan,04-05-2024,Asia,In-store,80,78,P034,Perfume,Personal Care,Fragrance,All
+1035,Elena Petrov,Female,29,Russia,05-05-2024,Europe,Online,90,88,P035,Cologne,Personal Care,Fragrance,All
+1036,David Garcia,Male,38,Spain,06-05-2024,Europe,In-store,45,43,P036,Aftershave,Personal Care,Shaving,All
+1037,Mei Ling,Female,31,China,07-05-2024,Asia,Online,700,698,P037,Makeup Remover,Personal Care,Face Care,All
+1038,Lucas Ferreira,Male,34,Brazil,08-05-2024,South America,In-store,80,78,P038,Foot Scrub,Personal Care,Foot Care,All
+1039,Emma Smith,Female,33,Australia,09-05-2024,Oceania,Online,30,28,P039,Hair Conditioner,Personal Care,Hair Care,All
+1040,Mohammed Ali,Male,42,Egypt,10-05-2024,Middle East,In-store,20,18,P040,Hair Serum,Personal Care,Hair Care,All
+1041,Yuki Tanaka,Female,30,Japan,11-05-2024,Asia,Online,100,98,P041,Whitening Toothpaste,Personal Care,Oral Care,All
+1042,Liam Murphy,Male,36,Ireland,12-05-2024,Europe,In-store,1100,1098,P042,Toothbrush,Personal Care,Oral Care,All
+1043,Sofia Gonzalez,Female,28,Mexico,13-05-2024,North America,Online,180,178,P043,Electric Toothbrush,Personal Care,Oral Care,All
+1044,Benjamin Lim,Male,47,Singapore,14-05-2024,Asia,In-store,40,38,P044,Mouthwash,Personal Care,Oral Care,All
+1045,Olivia Baker,Female,26,USA,15-05-2024,North America,In-store,70,68,P045,Floss,Personal Care,Oral Care,All
+1046,Lucas Costa,Male,41,Brazil,16-05-2024,South America,Online,250,248,P046,Hair Bands,Personal Care,Hair Care,All
+1047,Elena Ivanova,Female,39,Russia,17-05-2024,Europe,In-store,60,58,P047,Bath Sponges,Personal Care,Bath Care,All
+1048,Amir Khalid,Male,44,UAE,18-05-2024,Middle East,Online,90,88,P048,Hair Curlers,Personal Care,Hair Care,All
+1049,Ji-won Park,Female,27,South Korea,19-05-2024,Asia,In-store,70,68,P049,Ear Swabs,Personal Care,Ear Care,All
+1050,Jacob Taylor,Male,39,UK,20-05-2024,Europe,Online,80,78,P050,Hair Brush,Personal Care,Hair Care,All
+1051,Maria Sanchez,Female,34,Spain,21-05-2024,Europe,In-store,110,108,P051,Face Cream,Personal Care,Face Care,All
+1052,Wei Liu,Male,32,China,22-05-2024,Asia,Online,350,348,P052,Eye Cream,Personal Care,Face Care,All
+1053,Rafael Silva,Female,29,Brazil,23-05-2024,South America,In-store,70,68,P053,Facial Serum,Personal Care,Face Care,All
+1054,Emma Johnson,Male,45,Australia,24-05-2024,Oceania,Online,130,128,P054,Bath Towels,Household,Household Linen,All
+1055,Mohammad Ali,Female,31,Pakistan,25-05-2024,Asia,In-store,40,38,P055,Bath Mats,Household,Household Linen,All
+1056,Elena Petrova,Male,37,Russia,26-05-2024,Europe,In-store,220,218,P056,Shower Curtains,Household,Household Linen,All
+1057,David Fernandes,Female,32,Spain,27-05-2024,Europe,Online,480,478,P057,Hair Dye,Personal Care,Hair Care,All
+1058,Mei Wong,Male,38,China,28-05-2024,Asia,In-store,150,148,P058,Body Lotion,Personal Care,Body Care,All
+1059,Lucas Santos,Female,33,Brazil,29-05-2024,South America,Online,75,73,P059,Face Toner,Personal Care,Face Care,All
+1060,Emily Taylor,Male,40,USA,30-05-2024,North America,In-store,40,38,P060,Facial Wipes,Personal Care,Face Care,All

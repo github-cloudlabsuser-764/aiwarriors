@@ -261,8 +261,8 @@ function createGrid(rows, columns, data) {
 }
 
 function createTable(data) {
-    let tableHtml = '<table border="1">';
-    tableHtml += '<tr><th>Category</th><th>Product</th><th>Countries</th></tr>';
+    let tableHtml = '<table  style="border:1px solid black">';
+    tableHtml += '<tr  style="border:1px solid black"><th>Category</th><th>Product</th><th>Countries</th></tr>';
 
     for (const category in data) {
         const products = data[category];
@@ -272,7 +272,7 @@ function createTable(data) {
             for (const country in regions) {
                 regionsHtml += `${country}: ${regions[country]}<br>`; // Format each country and value
             }
-            tableHtml += `<tr><td>${category}</td><td>${product}</td><td>${regionsHtml}</td></tr>`;
+            tableHtml += `<tr style="border:1px solid black"><td style="border:1px solid black">${category}</td><td style="border:1px solid black">${product}</td><td style="border:1px solid black">${regionsHtml}</td></tr>`;
         }
     }
 
