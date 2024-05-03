@@ -149,22 +149,30 @@ namespace AI.StoreOperations.Helper
         public static string GetPackPricingPrompt(List<PackPricing> prdData)
         {
 
-            var prompt = "Generate a dynamic pricing strategy for a CPDR company that manufactures consumer packaged goods. The goal is to optimize pack pricing based on various factors including customer gender, transaction date, season, country, and region";
-            prompt += $"\n Consider the following context and requirements:";
-            prompt += $"\n Customer Gender,";
-            prompt += $"\n Transaction Date and Season";
-            prompt += $"\n Country and Region";
-            prompt += $"\n Actual Price ";
-            //prompt += $"\n Generate Pricing only for Country as India";
-            prompt += $"\n Genearte Pack pricing for pack of 3,6 and 12 items";
-            prompt += $"\n consider discount of 5% on pack of 3, 10% on pack of 6 and 15% on pack of 12. using this discount criteria generate the price for 3,6 and 12 items respectively";
-            prompt += $"\n Use this JSON format for response ```{{\"Row 1\": {{\"Box 1\": [\"Shampoo\"\"[pack 1] = $*1,[pack 3]= $*3, [pack 6]= $*6,[pack 12]= $*12\"], \"Box 2\": [\"Hair Conditioner\"\"[pack 1] = $*1,[pack 3]= $*3, [pack 6]= $*6,[pack 12]= $*12\"]}},\"Row 2\": {{\"Box 1\": \"Shaving Blades\"\"[pack 1] = $*1,[pack 3]= $*3, [pack 6]= $*6,[pack 12]= $*12\"], \"Box 2\": [\"Conditioner\"\"[pack 1] = $*1,[pack 3]= $*3, [pack 6]= $*6,[pack 12]= $*12\"],  \"Box n\": [\"Product n\"\"[pack n] = $*n,[pack n]= $*n, [pack n]= $*n,[pack n]= $*n\"]}}```";
-            prompt += $"\n Add the JSON response in triple backticks (```)";
+       var prompt = "Generate a dynamic pricing strategy for a CPDR company that manufactures consumer packaged goods. The goal is to optimize pack pricing based on various factors including customer gender, transaction date, season, country, and region";
+           
+            prompt += $"\n Consider below breakdown for the dynamic pricing strategy:";
+            prompt += $"\n Discounts";
+            prompt += $"\n Pack of 3: 5% discount.";
+            prompt += $"\n Pack of 6: 10% discount.";
+            prompt += $"\n Pack of 12: 15% discount";
+            prompt += $"\n Price Calculation, Use the below formula for pack of 3, 6 and 12.";
+            prompt += $"\n Pack of 3 Price: '3 * actual_price * (1 - 0.05)'";
+            prompt += $"\n Pack of 6 Price: '6 * actual_price * (1 - 0.10)'";
+            prompt += $"\n Pack of 12 Price: '12 * actual_price * (1 - 0.15)'";
+
+            //prompt += $"\n -Customer Gender,";
+            //prompt += $"\n -Transaction Date and Season";
+            //prompt += $"\n -Country and Region";
+            //prompt += $"\n -Actual Price ";            
+            //prompt += $"\n -Generate Pack pricing for pack of 3,6 and 12 items";
+            //prompt += $"\n -Consider discount of 5% on pack of 3, 10% on pack of 6 and 15% on pack of 12. using this discount criteria generate the price for 3,6 and 12 items respectively";
+            prompt += $"\n -Use this JSON format for response ```{{\"Row 1\": {{\"Box 1\": [\"Shampoo\"\"[pack 1] = $*1,\n [pack 3]= $*3, \n [pack 6]= $*6,\n [pack 12]= $*12\"], \"Box 2\": [\"Hair Conditioner\"\"[pack 1] = $*1,\n [pack 3]= $*3, \n [pack 6]= $*6,\n [pack 12]= $*12\"]}},\"Row 2\": {{\"Box 1\": \"Shaving Blades\"\"[pack 1] = $*1,\n [pack 3]= $*3, \n [pack 6]= $*6,\n [pack 12]= $*12\"], \"Box 2\": [\"Conditioner\"\"[pack 1] = $*1,\n [pack 3]= $*3, \n [pack 6]= $*6,\n [pack 12]= $*12\"],  \"Box n\": [\"Product n\"\"[pack n] = $*n,\n [pack n]= $*n, \n [pack n]= $*n,[pack n]= $*n\"]}}```";
+            prompt += $"\n -Your entire response/output is going to consist of a single JSON object {{}}, and you will NOT wrap it within JSON md markers";
             foreach (var product in prdData)
             {
                 prompt += $"\n- {product.ProductName} (Season: {product.Seasonality}, Customer: {product.CustomerType}, Sales Volume: {product.SalesVolume} , Actual Price :{product.ActualPrice} , country :{product.Country} , region :{product.Region})";
             }
-
             return prompt;
         }
     }
