@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AI.StoreOperations.Model;
+using AI.StoreOperations.Services;
 
 namespace AI.StoreOperations.Controllers
 {
@@ -19,9 +20,9 @@ namespace AI.StoreOperations.Controllers
         {
             List<Transaction> transactions = Helper.Helper.GetTransactions();
             // Create a prompt to send to Azure OpenAI
-            string prompt = Helper.Helper.GetTransactionPrompt(transactions, channel);
+            string transactionPrompt = Helper.Helper.GetTransactionPrompt(transactions, channel);
 
-            var recommendation = AzureOpenAI.GetShelfOptimizationRecommendations(prompt);
+            var recommendation = AzureOpenAI.GetShelfOptimizationRecommendations(transactionPrompt);
             var result = Json(recommendation.Result);
 
             return Json(new { success = true, message = result });

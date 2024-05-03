@@ -1,41 +1,41 @@
 ﻿$(document).ready(function () {
-       // Handle category change to load sub-categories
-        $('#category').change(function () {
-            var categoryId = $(this).val();
-            
-            if (categoryId) {               
-                $.getJSON('/ShelfOptimization/GetSubCategories', { category: categoryId }, function (data) {
-                    var subCategoryDropdown = $('#subcategory');
-                    subCategoryDropdown.empty();
-                    subCategoryDropdown.append('<option value="">Select Sub-category</option>');
-                    $.each(data, function (index, item) {
-                        subCategoryDropdown.append('<option value="' + item + '">' + item + '</option>');
-                    });
-                    subCategoryDropdown.prop('disabled', false);
+    // Handle category change to load sub-categories
+    $('#category').change(function () {
+        var categoryId = $(this).val();
+
+        if (categoryId) {
+            $.getJSON('/ShelfOptimization/GetSubCategories', { category: categoryId }, function (data) {
+                var subCategoryDropdown = $('#subcategory');
+                subCategoryDropdown.empty();
+                subCategoryDropdown.append('<option value="">Select Sub-category</option>');
+                $.each(data, function (index, item) {
+                    subCategoryDropdown.append('<option value="' + item + '">' + item + '</option>');
                 });
-            } else {
-                $('#subcategory').empty().prop('disabled', true);
-                $('#productlist').empty().prop('disabled', true);
-            }
-        });
+                subCategoryDropdown.prop('disabled', false);
+            });
+        } else {
+            $('#subcategory').empty().prop('disabled', true);
+            $('#productlist').empty().prop('disabled', true);
+        }
+    });
 
     // Handle sub-category change to load products
     $('#subcategory').change(function () {
-                var subCategoryId = $(this).val();
+        var subCategoryId = $(this).val();
 
-    if (subCategoryId) {
-        $.getJSON('/ShelfOptimization/GetProducts', { subCategory: subCategoryId }, function (data) {
-            var productListBox = $('#productlist');
-            productListBox.empty();
-            $.each(data, function (index, item) {
-                productListBox.append('<option value="' + item.productId + '">' + item.productName + '</option>');
+        if (subCategoryId) {
+            $.getJSON('/ShelfOptimization/GetProducts', { subCategory: subCategoryId }, function (data) {
+                var productListBox = $('#productlist');
+                productListBox.empty();
+                $.each(data, function (index, item) {
+                    productListBox.append('<option value="' + item.productId + '">' + item.productName + '</option>');
+                });
+                productListBox.prop('disabled', false);
             });
-            productListBox.prop('disabled', false);
-        });
-                } else {
-        $('#productlist').empty().prop('disabled', true);
-                }
-            });
+        } else {
+            $('#productlist').empty().prop('disabled', true);
+        }
+    });
 
     $("#addProducts").click(function () {
         // Get a reference to the select elements  
@@ -46,7 +46,7 @@
         productList.find("option:selected").each(function (index, item) {
             selectedProductList.append($(this).clone());
         });
-    });  
+    });
 
 
     // Handle Optimization products
@@ -57,8 +57,7 @@
         var columns = $('#grdCol').val();
         var season = $("#season").val();
 
-        if (selectedProductIds && selectedProductIds.length >= 0)
-        {
+        if (selectedProductIds && selectedProductIds.length >= 0) {
 
             var serializedIds = selectedProductIds.map(encodeURIComponent).join("&selectedProductIds=");
 
@@ -66,7 +65,7 @@
 
             //var st = "{  \"Row 1\": {    \"Box 1\": [\"Shampoo\", \"Conditioner\", \"Hair Color\"],    \"Box 2\": [\"Hair Conditioner\", \"Hair Dye\", \"Hair Brush\"],    \"Box 3\": [\"Hair Comb\"]  },  \"Row 2\": {    \"Box 1\": [\"Hair Gel\", \"Hair Curlers\", \"Kids Shampoo\"],    \"Box 2\": [\"Hair Mousse\", \"Hair Serum\"],    \"Box 3\": [\"Hair Bands\", \"Hair Rollers\", \"Shaving Cream\"]  }}";
 
-            
+
             $.getJSON('/ShelfOptimization/GetRecommendation' + queryString, function (data) {
                 console.log(data.message.value);
                 var jsonData = JSON.parse(data.message.value);
@@ -81,8 +80,8 @@
                     let backtickString = matches[0].replace(/`/g, '');
                     backtickJson = JSON.parse(backtickString);
                 }
-                
-                console.log(backtickJson);  
+
+                console.log(backtickJson);
                 createGrid(rows, columns, backtickJson);
             })
                 .fail(function () {
@@ -97,8 +96,8 @@
 
         }
         else {
-                    $('#result').text('Please select at least one product.');
-              }
+            $('#result').text('Please select at least one product.');
+        }
     });
 
     //Transaction
@@ -121,19 +120,107 @@
                 else {
                     let regex = /`([^`]+)`/g;
                     let matches = messageData.match(regex);
-                    let backtickString = matches[0].replace(/`/g, '');
+                    let backtickString = matches[0].replace(/`json\n/g, '');
                     backtickJson = JSON.parse(backtickString);
                 }
 
                 console.log(backtickJson);
-                ('#div-result').append(createTable(data));
+                document.getElementById('div-result').innerHTML += createTable(backtickJson);
             })
                 .fail(function () {
                     alert('Error');
                 });
         }
     });
-      
+    $('#categorypack').change(function () {
+        var categoryId = $(this).val();
+
+        if (categoryId) {
+            $.getJSON('/PackPricing/GetSubCategories', { category: categoryId }, function (data) {
+                var subCategoryDropdown = $('#subcategorypack');
+                subCategoryDropdown.empty();
+                subCategoryDropdown.append('<option value="">Select Sub-category</option>');
+                $.each(data, function (index, item) {
+                    subCategoryDropdown.append('<option value="' + item + '">' + item + '</option>');
+                });
+                subCategoryDropdown.prop('disabled', false);
+            });
+        } else {
+            $('#subcategorypack').empty().prop('disabled', true);
+            $('#productlist').empty().prop('disabled', true);
+        }
+    });
+
+    // Handle sub-category change to load products
+    $('#subcategorypack').change(function () {
+        var subCategoryId = $(this).val();
+
+        if (subCategoryId) {
+            $.getJSON('/PackPricing/GetProducts', { subCategory: subCategoryId }, function (data) {
+                var productListBox = $('#productlist');
+                productListBox.empty();
+                $.each(data, function (index, item) {
+                    productListBox.append('<option value="' + item.productId + '">' + item.productName + '</option>');
+                });
+                productListBox.prop('disabled', false);
+            });
+        } else {
+            $('#productlist').empty().prop('disabled', true);
+        }
+    });
+
+    $('#btnRecommendationPackprice').click(function () {
+        var selectedProductIds = $("#selectedprdlist").val();
+        console.log(selectedProductIds);
+        var rows = $('#grdRow').val();
+        var columns = $('#grdCol').val();
+        var season = $("#season").val();
+
+        if (selectedProductIds && selectedProductIds.length >= 0) {
+
+            var serializedIds = selectedProductIds.map(encodeURIComponent).join("&selectedProductIds=");
+
+            var queryString = `?selectedProductIds=${serializedIds}`;
+
+            //var st = "{  \"Row 1\": {    \"Box 1\": [\"Shampoo\", \"Conditioner\", \"Hair Color\"],    \"Box 2\": [\"Hair Conditioner\", \"Hair Dye\", \"Hair Brush\"],    \"Box 3\": [\"Hair Comb\"]  },  \"Row 2\": {    \"Box 1\": [\"Hair Gel\", \"Hair Curlers\", \"Kids Shampoo\"],    \"Box 2\": [\"Hair Mousse\", \"Hair Serum\"],    \"Box 3\": [\"Hair Bands\", \"Hair Rollers\", \"Shaving Cream\"]  }}";
+
+
+            $.getJSON('/PackPricing/GetPackPricingButton' + queryString, function (data) {
+                console.log(data.message.value);
+                var jsonData = JSON.parse(data.message.value);
+                var messageData = jsonData.choices[0].message.content;
+                var backtickJson;
+                if (messageData.startsWith("{")) {
+                    backtickJson = JSON.parse(messageData);
+                }
+                else {
+
+                    let regex = /`([^`]+)`/g;
+                    let matches = messageData.match(regex);
+                    let backtickString = matches[0].replace(/`json\n?|/g, '');
+                    backtickString = backtickString.replace(/`/, '');
+                    backtickJson = JSON.parse(backtickString);
+                }
+
+                console.log(backtickJson);
+                createGrid(rows, columns, backtickJson);
+            })
+                .fail(function () {
+                    alert('Error');
+                });
+
+            //$.getJSON('/ShelfOptimization/GetRecommendation', { selectedProductIds: selectedProductIds, season, rows, columns },
+            //    function (data) {
+
+            //        alert('1');
+            //});
+
+        }
+        else {
+            $('#result').text('Please select at least one product.');
+        }
+    });
+
 });
 
 function createGrid(rows, columns, data) {
@@ -181,7 +268,11 @@ function createTable(data) {
         const products = data[category];
         for (const product in products) {
             const regions = products[product];
-            tableHtml += `<tr><td>${category}</td><td>${product}</td><td>${regions}</td></tr>`;
+            let regionsHtml = '';
+            for (const country in regions) {
+                regionsHtml += `${country}: ${regions[country]}<br>`; // Format each country and value
+            }
+            tableHtml += `<tr><td>${category}</td><td>${product}</td><td>${regionsHtml}</td></tr>`;
         }
     }
 

@@ -2,7 +2,7 @@
 @{
     ViewData["Title"] = "Transaction Details";
 
-    var distinctChannels= Model.Select(p=>p.Channel).Distinct().ToList();
+    var distinctChannels = Model.Select(p => p.Channel).Distinct().ToList();
     var distinctCategories = Model.Select(p => p.Category).Distinct().ToList();
 }
 <section>
@@ -25,9 +25,9 @@
         <input type="submit" id="btnTransaction" value="Get Transaction">
 
     </div>
-        <br />
-        <p>Transactions are</p>
-        <div id="div-result" >
-           
-        </div>
-    </section>
+    <br />
+    <p>Transactions are</p>
+    <div id="div-result">
+
+    </div>
+</section>
