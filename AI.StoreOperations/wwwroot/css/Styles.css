@@ -1,4 +1,4 @@
-﻿
+
 h1 {
     text-align: center;
 }
@@ -32,16 +32,39 @@ nav li {
             background-color: #111;
         }
 
+.nav-container {
+    display: flex;
+    justify-content: space-between; /* This will ensure the logo and nav items are aligned at ends */
+    align-items: center; /* This keeps items vertically centered */
+    padding: 10px 20px; /* Adjust padding as needed */
+}
+
+.logo-container img {
+    height: 40px; /* Adjust as needed */
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none; /* Remove default list style */
+    padding: 0;
+    margin: 0;
+}
+
+
 main {
     margin: 20px;
 }
 /* Base styling for the page */
 body {
     font-family: Arial, sans-serif; /* Clean and commonly used font */
-    background-color: #f9f9f9; /* Light background color */
+   
     color: #333; /* Standard text color */
     margin: 0;
     padding: 0;
+    font-family: 'Arial', sans-serif; /* Clean, commonly used font */
+    background-color: #f0f4f8; /* Light neutral color for the page */
+    color: #333; /* Standard text color for readability */
+  
 }
 
 /* Heading styling */
@@ -117,17 +140,17 @@ select[disabled] {
     grid-template-rows: repeat(3, 1fr); /* Adjust based on the number of rows */
     gap: 10px; /* Spacing between grid cells */
     padding: 20px; /* Padding around the grid */
-    background-color: #f0f0f0; /* Light background color */
+    background-color: #f0f0f0; /* Light background color */    
 }
 
 .grid-cell {
-    background-color: white; /* White background for cells */
+    background-color: rgba(0, 0, 0, 0.1); /* White background for cells */
     border: 1px solid #ddd; /* Light border around cells */
     padding: 10px; /* Padding inside cells */
     text-align: center; /* Center-align text */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
-    .grid-cell strong {
-        color: #333; /* Darker color for headings */
-    }
+.grid-cell strong {
+    color: #333; /* Darker color for headings */
+}
