@@ -1,4 +1,4 @@
-﻿@model List<AI.StoreOperations.Model.PackPricing>
+@model List<AI.StoreOperations.Model.PackPricing>
 @{
     ViewData["Title"] = "Pack Pricing Tool";
 
@@ -58,14 +58,21 @@
 
 
         <!-- Display result message -->
-        <div id="result"></div>
+        <div id="result">
+            <div id="loadingId" style="text-align:center">
+                <img src="~/images/loader.gif" />
+            </div>
+        </div>
         <input type="submit" id="btnRecommendationPackprice" value="Get Recommendation">
 
     </div>
     <br />
-    <p>Recommendation</p>
-    <div id="grid-container" class="grid-container">
-        <!-- The grid will be populated by jQuery -->
+    <div class="parameters">
+        <p><b>Recommendation for products pricing basded on pack sizes</b></p>
+        <div id="grid-container" class="grid-container">
+            <!-- The grid will be populated by jQuery -->
+
+        </div>
     </div>
 
 </section>
