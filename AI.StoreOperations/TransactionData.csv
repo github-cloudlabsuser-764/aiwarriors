@@ -1,61 +1,61 @@
-﻿Transaction ID,Customer Name,Customer Gender,Customer Age,Country,Transaction Date,Region,Channel,Category,Product,Amount
-1001,John Smith,Male,35,USA,01-04-2024,North America,Online,Electronics,Smartphone,800
-1002,Emily Johnson,Female,28,Canada,02-04-2024,North America,In-store,Clothing,Jeans,60
-1003,David Brown,Male,45,UK,03-04-2024,Europe,Online,Home Goods,Vacuum Cleaner,200
-1004,Maria Garcia,Female,32,Spain,04-04-2024,Europe,In-store,Electronics,Laptop,1200
-1005,Ahmed Khan,Male,40,UAE,05-04-2024,Middle East,Online,Sports,Tennis Racket,100
-1006,Wei Chen,Female,25,China,06-04-2024,Asia,In-store,Clothing,T-shirt,20
-1007,Sophie Dupont,Female,38,France,07-04-2024,Europe,Online,Beauty,Perfume,80
-1008,Michael Brown,Male,50,Australia,08-04-2024,Oceania,In-store,Electronics,Headphones,150
-1009,Priya Patel,Female,30,India,09-04-2024,Asia,Online,Home Goods,Blender,50
-1010,Juan Martinez,Male,29,Mexico,10-04-2024,North America,In-store,Sports,Soccer Ball,30
-1011,Sarah Kim,Female,27,South Korea,11-04-2024,Asia,Online,Clothing,Dress,70
-1012,Thomas Mueller,Male,55,Germany,12-04-2024,Europe,In-store,Home Goods,Microwave,180
-1013,Alessia Rossi,Female,33,Italy,13-04-2024,Europe,Online,Electronics,Tablet,300
-1014,Mohamed Ali,Male,42,Egypt,14-04-2024,Middle East,In-store,Beauty,Cologne,40
-1015,Yuko Tanaka,Female,31,Japan,15-04-2024,Asia,Online,Sports,Yoga Mat,25
-1016,Liam Wilson,Male,37,Ireland,16-04-2024,Europe,In-store,Clothing,Jacket,90
-1017,Gabriela Lopez,Female,26,Argentina,17-04-2024,South America,Online,Home Goods,Blender,60
-1018,Benjamin Lee,Male,48,Singapore,18-04-2024,Asia,In-store,Electronics,Smartwatch,300
-1019,Chloe Martin,Female,29,New Zealand,19-04-2024,Oceania,Online,Beauty,Makeup Kit,70
-1020,Carlos Fernandez,Male,36,Brazil,20-04-2024,South America,In-store,Sports,Running Shoes,120
-1021,Emma White,Female,34,Australia,21-04-2024,Oceania,Online,Clothing,Skirt,50
-1022,Mohammad Khan,Male,43,Pakistan,22-04-2024,Asia,In-store,Electronics,Camera,500
-1023,Elena Ivanova,Female,39,Russia,23-04-2024,Europe,Online,Home Goods,Coffee Maker,70
-1024,Ethan Miller,Male,31,USA,24-04-2024,North America,In-store,Beauty,Hair Dryer,40
-1025,Mia Chen,Female,28,China,25-04-2024,Asia,Online,Sports,Basketball,35
-1026,Luca Conti,Male,39,Italy,26-04-2024,Europe,In-store,Clothing,Suit,200
-1027,Isabella Silva,Female,36,Brazil,27-04-2024,South America,Online,Home Goods,Blender,60
-1028,Amir Shah,Male,45,UAE,28-04-2024,Middle East,In-store,Electronics,TV,1000
-1029,Nara Kim,Female,32,South Korea,29-04-2024,Asia,Online,Beauty,Skincare Set,90
-1030,Jack Brown,Male,40,UK,30-04-2024,Europe,In-store,Sports,Football,50
-1031,Luna Martinez,Female,27,Mexico,01-05-2024,North America,Online,Clothing,Jeans,80
-1032,Adam Wright,Male,46,Canada,02-05-2024,North America,In-store,Electronics,Speaker,150
-1033,Sara Costa,Female,35,Portugal,03-05-2024,Europe,Online,Home Goods,Blender,70
-1034,Mohammad Khan,Male,43,Pakistan,04-05-2024,Asia,In-store,Sports,Tennis Racket,80
-1035,Elena Petrov,Female,29,Russia,05-05-2024,Europe,Online,Clothing,Dress,90
-1036,David Garcia,Male,38,Spain,06-05-2024,Europe,In-store,Beauty,Cologne,45
-1037,Mei Ling,Female,31,China,07-05-2024,Asia,Online,Electronics,Smartphone,700
-1038,Lucas Ferreira,Male,34,Brazil,08-05-2024,South America,In-store,Home Goods,Blender,80
-1039,Emma Smith,Female,33,Australia,09-05-2024,Oceania,Online,Sports,Yoga Mat,30
-1040,Mohammed Ali,Male,42,Egypt,10-05-2024,Middle East,In-store,Clothing,T-shirt,20
-1041,Yuki Tanaka,Female,30,Japan,11-05-2024,Asia,Online,Beauty,Perfume,100
-1042,Liam Murphy,Male,36,Ireland,12-05-2024,Europe,In-store,Electronics,Laptop,1100
-1043,Sofia Gonzalez,Female,28,Mexico,13-05-2024,North America,Online,Home Goods,Vacuum Cleaner,180
-1044,Benjamin Lim,Male,47,Singapore,14-05-2024,Asia,In-store,Sports,Soccer Ball,40
-1045,Olivia Baker,Female,26,USA,15-05-2024,North America,In-store,Clothing,Jeans,70
-1046,Lucas Costa,Male,41,Brazil,16-05-2024,South America,Online,Electronics,Smartwatch,250
-1047,Elena Ivanova,Female,39,Russia,17-05-2024,Europe,In-store,Beauty,Makeup Kit,60
-1048,Amir Khalid,Male,44,UAE,18-05-2024,Middle East,Online,Home Goods,Coffee Maker,90
-1049,Ji-won Park,Female,27,South Korea,19-05-2024,Asia,In-store,Sports,Tennis Racket,70
-1050,Jacob Taylor,Male,39,UK,20-05-2024,Europe,Online,Clothing,Jacket,80
-1051,Maria Sanchez,Female,34,Spain,21-05-2024,Europe,In-store,Beauty,Skincare Set,110
-1052,Wei Liu,Male,32,China,22-05-2024,Asia,Online,Electronics,Tablet,350
-1053,Rafael Silva,Female,29,Brazil,23-05-2024,South America,In-store,Home Goods,Blender,70
-1054,Emma Johnson,Male,45,Australia,24-05-2024,Oceania,Online,Sports,Running Shoes,130
-1055,Mohammad Ali,Female,31,Pakistan,25-05-2024,Asia,In-store,Beauty,Cologne,40
-1056,Elena Petrova,Male,37,Russia,26-05-2024,Europe,In-store,Clothing,Suit,220
-1057,David Fernandes,Female,32,Spain,27-05-2024,Europe,Online,Electronics,Camera,480
-1058,Mei Wong,Male,38,China,28-05-2024,Asia,In-store,Home Goods,Vacuum Cleaner,150
-1059,Lucas Santos,Female,33,Brazil,29-05-2024,South America,Online,Beauty,Perfume,75
-1060,Emily Taylor,Male,40,USA,30-05-2024,North America,In-store,Sports,Basketball,40
+﻿Transaction ID,Customer Name,Customer Gender,Customer Age,Country,Transaction Date,Region,Channel,Category,Product,Amount,SalesVolume
+1001,John Smith,Male,35,USA,01-04-2024,North America,Online,Electronics,Smartphone,800,1241
+1002,Emily Johnson,Female,28,Canada,02-04-2024,North America,In-store,Clothing,Jeans,60,3729
+1003,David Brown,Male,45,UK,03-04-2024,Europe,Online,Home Goods,Vacuum Cleaner,200,966
+1004,Maria Garcia,Female,32,Spain,04-04-2024,Europe,In-store,Electronics,Laptop,1200,719
+1005,Ahmed Khan,Male,40,UAE,05-04-2024,Middle East,Online,Sports,Tennis Racket,100,2262
+1006,Wei Chen,Female,25,China,06-04-2024,Asia,In-store,Clothing,T-shirt,20,3461
+1007,Sophie Dupont,Female,38,France,07-04-2024,Europe,Online,Beauty,Perfume,80,2494
+1008,Michael Brown,Male,50,Australia,08-04-2024,Oceania,In-store,Electronics,Headphones,150,966
+1009,Priya Patel,Female,30,India,09-04-2024,Asia,Online,Home Goods,Blender,50,1507
+1010,Juan Martinez,Male,29,Mexico,10-04-2024,North America,In-store,Sports,Soccer Ball,30,1353
+1011,Sarah Kim,Female,27,South Korea,11-04-2024,Asia,Online,Clothing,Dress,70,1201
+1012,Thomas Mueller,Male,55,Germany,12-04-2024,Europe,In-store,Home Goods,Microwave,180,3496
+1013,Alessia Rossi,Female,33,Italy,13-04-2024,Europe,Online,Electronics,Tablet,300,4902
+1014,Mohamed Ali,Male,42,Egypt,14-04-2024,Middle East,In-store,Beauty,Cologne,40,4717
+1015,Yuko Tanaka,Female,31,Japan,15-04-2024,Asia,Online,Sports,Yoga Mat,25,3747
+1016,Liam Wilson,Male,37,Ireland,16-04-2024,Europe,In-store,Clothing,Jacket,90,4939
+1017,Gabriela Lopez,Female,26,Argentina,17-04-2024,South America,Online,Home Goods,Blender,60,879
+1018,Benjamin Lee,Male,48,Singapore,18-04-2024,Asia,In-store,Electronics,Smartwatch,300,2651
+1019,Chloe Martin,Female,29,New Zealand,19-04-2024,Oceania,Online,Beauty,Makeup Kit,70,4481
+1020,Carlos Fernandez,Male,36,Brazil,20-04-2024,South America,In-store,Sports,Running Shoes,120,4747
+1021,Emma White,Female,34,Australia,21-04-2024,Oceania,Online,Clothing,Skirt,50,2373
+1022,Mohammad Khan,Male,43,Pakistan,22-04-2024,Asia,In-store,Electronics,Camera,500,1062
+1023,Elena Ivanova,Female,39,Russia,23-04-2024,Europe,Online,Home Goods,Coffee Maker,70,215
+1024,Ethan Miller,Male,31,USA,24-04-2024,North America,In-store,Beauty,Hair Dryer,40,566
+1025,Mia Chen,Female,28,China,25-04-2024,Asia,Online,Sports,Basketball,35,1399
+1026,Luca Conti,Male,39,Italy,26-04-2024,Europe,In-store,Clothing,Suit,200,720
+1027,Isabella Silva,Female,36,Brazil,27-04-2024,South America,Online,Home Goods,Blender,60,199
+1028,Amir Shah,Male,45,UAE,28-04-2024,Middle East,In-store,Electronics,TV,1000,2984
+1029,Nara Kim,Female,32,South Korea,29-04-2024,Asia,Online,Beauty,Skincare Set,90,4457
+1030,Jack Brown,Male,40,UK,30-04-2024,Europe,In-store,Sports,Football,50,2388
+1031,Luna Martinez,Female,27,Mexico,01-05-2024,North America,Online,Clothing,Jeans,80,2199
+1032,Adam Wright,Male,46,Canada,02-05-2024,North America,In-store,Electronics,Speaker,150,2860
+1033,Sara Costa,Female,35,Portugal,03-05-2024,Europe,Online,Home Goods,Blender,70,1822
+1034,Mohammad Khan,Male,43,Pakistan,04-05-2024,Asia,In-store,Sports,Tennis Racket,80,1503
+1035,Elena Petrov,Female,29,Russia,05-05-2024,Europe,Online,Clothing,Dress,90,4477
+1036,David Garcia,Male,38,Spain,06-05-2024,Europe,In-store,Beauty,Cologne,45,1808
+1037,Mei Ling,Female,31,China,07-05-2024,Asia,Online,Electronics,Smartphone,700,2348
+1038,Lucas Ferreira,Male,34,Brazil,08-05-2024,South America,In-store,Home Goods,Blender,80,991
+1039,Emma Smith,Female,33,Australia,09-05-2024,Oceania,Online,Sports,Yoga Mat,30,3122
+1040,Mohammed Ali,Male,42,Egypt,10-05-2024,Middle East,In-store,Clothing,T-shirt,20,4588
+1041,Yuki Tanaka,Female,30,Japan,11-05-2024,Asia,Online,Beauty,Perfume,100,3672
+1042,Liam Murphy,Male,36,Ireland,12-05-2024,Europe,In-store,Electronics,Laptop,1100,4717
+1043,Sofia Gonzalez,Female,28,Mexico,13-05-2024,North America,Online,Home Goods,Vacuum Cleaner,180,620
+1044,Benjamin Lim,Male,47,Singapore,14-05-2024,Asia,In-store,Sports,Soccer Ball,40,4001
+1045,Olivia Baker,Female,26,USA,15-05-2024,North America,In-store,Clothing,Jeans,70,4061
+1046,Lucas Costa,Male,41,Brazil,16-05-2024,South America,Online,Electronics,Smartwatch,250,4192
+1047,Elena Ivanova,Female,39,Russia,17-05-2024,Europe,In-store,Beauty,Makeup Kit,60,1860
+1048,Amir Khalid,Male,44,UAE,18-05-2024,Middle East,Online,Home Goods,Coffee Maker,90,726
+1049,Ji-won Park,Female,27,South Korea,19-05-2024,Asia,In-store,Sports,Tennis Racket,70,2282
+1050,Jacob Taylor,Male,39,UK,20-05-2024,Europe,Online,Clothing,Jacket,80,3388
+1051,Maria Sanchez,Female,34,Spain,21-05-2024,Europe,In-store,Beauty,Skincare Set,110,523
+1052,Wei Liu,Male,32,China,22-05-2024,Asia,Online,Electronics,Tablet,350,1400
+1053,Rafael Silva,Female,29,Brazil,23-05-2024,South America,In-store,Home Goods,Blender,70,3602
+1054,Emma Johnson,Male,45,Australia,24-05-2024,Oceania,Online,Sports,Running Shoes,130,1053
+1055,Mohammad Ali,Female,31,Pakistan,25-05-2024,Asia,In-store,Beauty,Cologne,40,639
+1056,Elena Petrova,Male,37,Russia,26-05-2024,Europe,In-store,Clothing,Suit,220,4308
+1057,David Fernandes,Female,32,Spain,27-05-2024,Europe,Online,Electronics,Camera,480,1343
+1058,Mei Wong,Male,38,China,28-05-2024,Asia,In-store,Home Goods,Vacuum Cleaner,150,1684
+1059,Lucas Santos,Female,33,Brazil,29-05-2024,South America,Online,Beauty,Perfume,75,3448
+1060,Emily Taylor,Male,40,USA,30-05-2024,North America,In-store,Sports,Basketball,40,4616
