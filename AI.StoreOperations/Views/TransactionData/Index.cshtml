@@ -1,4 +1,4 @@
-﻿@model List<AI.StoreOperations.Model.Transaction>
+@model List<AI.StoreOperations.Model.Transaction>
 @{
     ViewData["Title"] = "Transaction Details";
 
@@ -21,13 +21,24 @@
             }
         </select>
         <!-- Display result message -->
-        <div id="result"></div>
+        <div id="result">
+            <div id="loadingId" style="text-align:center">
+                <img src="~/images/loader.gif" />
+            </div>
+        </div>
         <input type="submit" id="btnTransaction" value="Get Transaction">
 
     </div>
     <br />
-    <p>Transactions are</p>
-    <div id="div-result">
+    <div class="parameters">
+        <p><b>Transaction Report</b></p>
+        <div id="div-output">
+            <!-- The grid will be populated by jQuery -->
 
+        </div>
+        <div id="div-result" >
+            <!-- The grid will be populated by jQuery -->
+
+        </div>
     </div>
 </section>
