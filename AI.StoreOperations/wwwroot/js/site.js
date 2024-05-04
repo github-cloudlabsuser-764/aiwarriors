@@ -111,7 +111,7 @@ $(document).ready(function () {
 
             var queryString = `?selectedChannel=${selectedChannel}`;
 
-
+            $("#loadingId").show();
             $.getJSON('/TransactionData/GetSeleactedTransactions' + queryString, function (data) {
                 console.log(data.message.value);
                 var jsonData = JSON.parse(data.message.value);
@@ -120,18 +120,34 @@ $(document).ready(function () {
                 if (messageData.startsWith("{")) {
                     backtickJson = JSON.parse(messageData);
                 }
+                else if (messageData.startsWith("json")) {
+                    var data = messageData.replace("json", "");
+                    backtickJson = JSON.parse(data);
+                }
                 else {
+                    var messageData = messageData.replace("json", "");
                     let regex = /`([^`]+)`/g;
                     let matches = messageData.match(regex);
-                    let backtickString = matches[0].replace(/`json\n/g, '');
+                    let backtickString = matches[0].replace(/`/g, '');
                     backtickJson = JSON.parse(backtickString);
                 }
 
                 console.log(backtickJson);
-                document.getElementById('div-result').innerHTML += createTable(backtickJson);
+                var stringData = "total_revenue: "+backtickJson.total_revenue;
+                stringData += "<br/>total_sales_volume: " + backtickJson.total_sales_volume;
+                stringData += "<br/>average_customer_age: " + backtickJson.average_customer_age +"<br/>";
+
+                for (var i = 0; i < backtickJson.observations.length; i++) {
+                    stringData += "  - " + backtickJson.observations[i] + "<br>";
+                }
+                $('#div-output').html(stringData);
+                //document.getElementById('div-output').innerHTML += backtickJson;
+                //document.getElementById('div-result').innerHTML += createTable(backtickJson);
+                $("#loadingId").hide();
             })
                 .fail(function () {
-                    alert('Error');
+                    console.log('Error');
+                    $("#loadingId").hide();
                 });
         }
     });
