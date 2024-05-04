@@ -64,7 +64,8 @@ namespace AI.StoreOperations.Helper
                             Channel = values[7],
                             Category = values[8],
                             Product = values[9],
-                            Amount = Convert.ToDouble(values[10])
+                            Amount = Convert.ToDouble(values[10]),
+                            SalesVolume = Convert.ToDouble(values[11])
 
                         };
                         transactions.Add(tran);
@@ -133,18 +134,19 @@ namespace AI.StoreOperations.Helper
 
         public static string GetTransactionPrompt(List<Transaction> transData, string channel)
         {
-            var prompt = "Based on the following transactional data, suggest the recommended product with category.Consider Channel, Category, Product and Country in suggestion:";
-            prompt += $"\n Consider current Channel is {channel}.";
-            prompt += $"\n Add the number of transactions done for each product from each country based on current Channel.";
-            //Display all the corresponding transactions from the transactional data.
-            prompt += $"\n Use this JSON format for response ```{{\"Category 1\":{{\"Product 1\":{{\"Country 1\"}},{{\"Country n\"}}}},{{\"Product 2\":{{\"Country 1\"}},{{\"Country n\"}}}}}},{{\"Category 2\": {{\"Product 1\":{{\"Country 1\"}},{{\"Country n\"}}}},{{\"Product 2\":{{\"Country 1\"}},{{\"Country n\"}}}}}}```";
-            prompt += $"\nAdd the response JSON in triple backticks (```)";
+            //var prompt = "Generate transaction report based on category.Consider Channel, Category, Product and Country in suggestion:";
+            //prompt += $"\n Consider current Channel is {channel}.";
+            //prompt += $"\n Add the number of transactions done for each product from each country based on current Channel.";
+            ////Display all the corresponding transactions from the transactional data.
+            //prompt += $"\n Use this JSON format for response ```{{\"Category 1\":{{\"Product 1\":{{\"Country 1\"}},{{\"Country n\"}}}},{{\"Product 2\":{{\"Country 1\"}},{{\"Country n\"}}}}}},{{\"Category 2\": {{\"Product 1\":{{\"Country 1\"}},{{\"Country n\"}}}},{{\"Product 2\":{{\"Country 1\"}},{{\"Country n\"}}}}}}```";
+            //prompt += $"\nAdd the response JSON in triple backticks (```)";
+            var prompt = "Given the following transaction data, generate a summary report with key insights:";
             foreach (var transaction in transData)
             {
-                prompt += $"\n- {transaction.TransactionId} (Channel:{transaction.Channel} Category: {transaction.Category}, Product: {transaction.Product}, Country: {transaction.Country})";
+                prompt += $"\n- {transaction.TransactionId} (Channel:{transaction.Channel} Category: {transaction.Category}, Product: {transaction.Product}, Country: {transaction.Country}, SalesVolume: {transaction.SalesVolume}, Gender:{transaction.CustomerGender}, Amount:{transaction.Amount}, Channel:{transaction.Channel}, Age:{transaction.CustomerAge})";
             }
-
-            return prompt;
+            prompt += $"\n Add the response JSON in triple backticks (```)";
+            return prompt+= $"\n Generate insights on total revenue, total sales volume, average customer age, and any other significant observations.";
         }
         public static string GetPackPricingPrompt(List<PackPricing> prdData)
         {
